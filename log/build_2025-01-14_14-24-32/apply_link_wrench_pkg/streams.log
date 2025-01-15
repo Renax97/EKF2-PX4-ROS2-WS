@@ -1,0 +1,26 @@
+[0.025s] Invoking command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target apply_link_wrench[0m
+[0.135s] [ 50%] [32mBuilding CXX object CMakeFiles/apply_link_wrench.dir/src/apply_link_wrench.cpp.o[0m
+[8.355s] [100%] [32m[1mLinking CXX executable apply_link_wrench[0m
+[8.739s] [100%] Built target apply_link_wrench
+[8.760s] Invoked command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20
+[8.763s] Invoking command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg
+[8.776s] -- Install configuration: ""
+[8.777s] -- Execute custom install script
+[8.778s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib/apply_link_wrench_pkg/apply_link_wrench
+[8.778s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/ament_index/resource_index/package_run_dependencies/apply_link_wrench_pkg
+[8.778s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/ament_index/resource_index/parent_prefix_path/apply_link_wrench_pkg
+[8.779s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/environment/ament_prefix_path.sh
+[8.779s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/environment/ament_prefix_path.dsv
+[8.779s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/environment/path.sh
+[8.779s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/environment/path.dsv
+[8.780s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/local_setup.bash
+[8.780s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/local_setup.sh
+[8.780s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/local_setup.zsh
+[8.780s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/local_setup.dsv
+[8.781s] -- Symlinking: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.dsv
+[8.797s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/ament_index/resource_index/packages/apply_link_wrench_pkg
+[8.797s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/cmake/apply_link_wrench_pkgConfig.cmake
+[8.797s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/cmake/apply_link_wrench_pkgConfig-version.cmake
+[8.797s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.xml
+[8.801s] Invoked command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg

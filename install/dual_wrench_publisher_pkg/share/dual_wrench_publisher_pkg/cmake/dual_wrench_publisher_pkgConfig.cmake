@@ -1,0 +1,1 @@
+/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg/ament_cmake_core/dual_wrench_publisher_pkgConfig.cmake

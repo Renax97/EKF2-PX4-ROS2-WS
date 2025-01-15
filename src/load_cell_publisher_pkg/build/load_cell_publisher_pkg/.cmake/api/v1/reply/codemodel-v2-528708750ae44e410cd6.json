@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-838ceb78b5d96259a717.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "load_cell_publisher_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "force_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-force_publisher-c3dc97a9f78932f59dc8.json",
+					"name" : "force_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "load_cell_publisher_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-load_cell_publisher_node-438925e888f70986aa47.json",
+					"name" : "load_cell_publisher_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "load_cell_publisher_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-load_cell_publisher_pkg_uninstall-37461089f27c7fc58edf.json",
+					"name" : "load_cell_publisher_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d6efb177202f72534b78.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg",
+		"source" : "/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

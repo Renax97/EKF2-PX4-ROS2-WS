@@ -1,0 +1,1 @@
+/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg/ament_cmake_environment_hooks/local_setup.sh

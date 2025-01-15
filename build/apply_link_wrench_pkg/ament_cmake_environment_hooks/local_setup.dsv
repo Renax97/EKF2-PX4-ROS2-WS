@@ -1,0 +1,2 @@
+source;share/apply_link_wrench_pkg/environment/ament_prefix_path.sh
+source;share/apply_link_wrench_pkg/environment/path.sh

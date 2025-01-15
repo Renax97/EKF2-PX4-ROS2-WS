@@ -1,0 +1,28 @@
+[0.009s] Invoking command in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg -- -j20 -l20
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target force_publisher[0m
+[0.056s] [ 50%] Built target load_cell_publisher_node
+[0.059s] [ 75%] [32mBuilding CXX object CMakeFiles/force_publisher.dir/src/force_publisher.cpp.o[0m
+[3.317s] [100%] [32m[1mLinking CXX executable force_publisher[0m
+[3.475s] [100%] Built target force_publisher
+[3.485s] Invoked command in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg -- -j20 -l20
+[3.494s] Invoking command in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg
+[3.500s] -- Install configuration: ""
+[3.500s] -- Installing: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/lib/load_cell_publisher_pkg/force_publisher
+[3.501s] -- Set runtime path of "/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/lib/load_cell_publisher_pkg/force_publisher" to ""
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/lib/load_cell_publisher_pkg/load_cell_publisher_node
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/load_cell_publisher_pkg
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/load_cell_publisher_pkg
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/environment/ament_prefix_path.sh
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/environment/ament_prefix_path.dsv
+[3.501s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/environment/path.sh
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/environment/path.dsv
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/local_setup.bash
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/local_setup.sh
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/local_setup.zsh
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/local_setup.dsv
+[3.502s] -- Installing: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.dsv
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/ament_index/resource_index/packages/load_cell_publisher_pkg
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/cmake/load_cell_publisher_pkgConfig.cmake
+[3.502s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/cmake/load_cell_publisher_pkgConfig-version.cmake
+[3.503s] -- Up-to-date: /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.xml
+[3.504s] Invoked command in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/src/load_cell_publisher_pkg/build/load_cell_publisher_pkg
