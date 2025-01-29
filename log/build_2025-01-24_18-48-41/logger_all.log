@@ -1,0 +1,478 @@
+[0.112s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.112s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a47d2e2b610>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a47d2f74c10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a47d2f74c10>>, mixin_verb=('build',))
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.360s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/renato/ws_sensor_combined'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extension 'ignore'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extension 'ignore_ament_install'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extensions ['colcon_pkg']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extension 'colcon_pkg'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extensions ['colcon_meta']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extension 'colcon_meta'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extensions ['ros']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/apply_link_wrench_pkg) by extension 'ros'
+[0.380s] DEBUG:colcon.colcon_core.package_identification:Package 'src/apply_link_wrench_pkg' with type 'ros.ament_cmake' and name 'apply_link_wrench_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extension 'ignore_ament_install'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extensions ['colcon_pkg']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extension 'colcon_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extensions ['colcon_meta']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extension 'colcon_meta'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extensions ['ros']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/dual_wrench_publisher_pkg) by extension 'ros'
+[0.381s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dual_wrench_publisher_pkg' with type 'ros.ament_cmake' and name 'dual_wrench_publisher_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell_publisher_pkg) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package 'src/load_cell_publisher_pkg' with type 'ros.ament_cmake' and name 'load_cell_publisher_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.384s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_driver_pkg) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_driver_pkg' with type 'ros.ament_cmake' and name 'sensor_driver_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.410s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/renato/ws_sensor_combined/install
+[0.411s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/renato/bridge_ws/install
+[0.412s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'apply_link_wrench_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'apply_link_wrench_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/apply_link_wrench_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'dual_wrench_publisher_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'dual_wrench_publisher_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/dual_wrench_publisher_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'load_cell_publisher_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'load_cell_publisher_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'sensor_driver_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_driver_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/renato/ws_sensor_combined/build/sensor_driver_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/renato/ws_sensor_combined/install/sensor_driver_pkg', 'merge_install': False, 'path': '/home/renato/ws_sensor_combined/src/sensor_driver_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.450s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/px4_msgs'
+[0.454s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.458s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/apply_link_wrench_pkg' with build type 'ament_cmake'
+[0.458s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/apply_link_wrench_pkg'
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_msgs -- -j20 -l20
+[0.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20
+[1.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_msgs -- -j20 -l20
+[1.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_msgs
+[2.551s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_msgs
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs' for CMake module files
+[2.556s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs' for CMake config files
+[2.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.575s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib'
+[2.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.578s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/bin'
+[2.578s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.578s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[2.578s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/bin'
+[2.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[2.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[2.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.584s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs' for CMake module files
+[2.585s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs' for CMake config files
+[2.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.604s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib'
+[2.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.605s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/bin'
+[2.605s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.606s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[2.606s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_msgs/bin'
+[2.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.607s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[2.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[2.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.609s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/dual_wrench_publisher_pkg' with build type 'ament_cmake'
+[2.609s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/dual_wrench_publisher_pkg'
+[2.610s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.616s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg' with build type 'ament_cmake'
+[2.616s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/load_cell_publisher_pkg'
+[2.616s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.617s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[2.623s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/px4_ros_com'
+[2.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.629s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/renato/ws_sensor_combined/src/sensor_driver_pkg' with build type 'ament_cmake'
+[2.629s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/renato/ws_sensor_combined/src/sensor_driver_pkg'
+[2.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg -- -j20 -l20
+[2.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/load_cell_publisher_pkg -- -j20 -l20
+[2.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_ros_com -- -j20 -l20
+[2.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/sensor_driver_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/sensor_driver_pkg -- -j20 -l20
+[2.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg -- -j20 -l20
+[2.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg
+[2.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/load_cell_publisher_pkg -- -j20 -l20
+[2.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/load_cell_publisher_pkg
+[2.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/sensor_driver_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/sensor_driver_pkg -- -j20 -l20
+[2.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/sensor_driver_pkg': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/sensor_driver_pkg
+[2.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dual_wrench_publisher_pkg)
+[2.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg
+[2.798s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg' for CMake module files
+[2.800s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg' for CMake config files
+[2.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('dual_wrench_publisher_pkg', 'cmake_prefix_path')
+[2.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.ps1'
+[2.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.dsv'
+[2.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.sh'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/bin'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib/pkgconfig/dual_wrench_publisher_pkg.pc'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib/python3.10/site-packages'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/bin'
+[2.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.ps1'
+[2.808s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.dsv'
+[2.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.sh'
+[2.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.bash'
+[2.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.zsh'
+[2.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/colcon-core/packages/dual_wrench_publisher_pkg)
+[2.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dual_wrench_publisher_pkg)
+[2.811s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg' for CMake module files
+[2.812s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg' for CMake config files
+[2.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('dual_wrench_publisher_pkg', 'cmake_prefix_path')
+[2.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.ps1'
+[2.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.dsv'
+[2.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/hook/cmake_prefix_path.sh'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/bin'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib/pkgconfig/dual_wrench_publisher_pkg.pc'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/lib/python3.10/site-packages'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/bin'
+[2.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.ps1'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.dsv'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.sh'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.bash'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/dual_wrench_publisher_pkg/package.zsh'
+[2.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg/share/colcon-core/packages/dual_wrench_publisher_pkg)
+[2.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(load_cell_publisher_pkg)
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg' for CMake module files
+[2.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/load_cell_publisher_pkg
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg' for CMake config files
+[2.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('load_cell_publisher_pkg', 'cmake_prefix_path')
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.ps1'
+[2.827s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.dsv'
+[2.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.sh'
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib'
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/bin'
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib/pkgconfig/load_cell_publisher_pkg.pc'
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib/python3.10/site-packages'
+[2.829s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/bin'
+[2.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.ps1'
+[2.830s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.dsv'
+[2.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.sh'
+[2.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.bash'
+[2.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.zsh'
+[2.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/colcon-core/packages/load_cell_publisher_pkg)
+[2.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(load_cell_publisher_pkg)
+[2.833s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg' for CMake module files
+[2.833s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg' for CMake config files
+[2.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('load_cell_publisher_pkg', 'cmake_prefix_path')
+[2.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.ps1'
+[2.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.dsv'
+[2.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/hook/cmake_prefix_path.sh'
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib'
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/bin'
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib/pkgconfig/load_cell_publisher_pkg.pc'
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/lib/python3.10/site-packages'
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/bin'
+[2.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.ps1'
+[2.838s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.dsv'
+[2.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.sh'
+[2.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.bash'
+[2.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/load_cell_publisher_pkg/package.zsh'
+[2.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg/share/colcon-core/packages/load_cell_publisher_pkg)
+[2.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_driver_pkg)
+[2.840s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg' for CMake module files
+[2.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/sensor_driver_pkg' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/sensor_driver_pkg
+[2.842s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg' for CMake config files
+[2.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_driver_pkg', 'cmake_prefix_path')
+[2.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.ps1'
+[2.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.dsv'
+[2.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.sh'
+[2.844s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib'
+[2.845s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/bin'
+[2.845s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib/pkgconfig/sensor_driver_pkg.pc'
+[2.845s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib/python3.10/site-packages'
+[2.845s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/bin'
+[2.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.ps1'
+[2.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.dsv'
+[2.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.sh'
+[2.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.bash'
+[2.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.zsh'
+[2.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/colcon-core/packages/sensor_driver_pkg)
+[2.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_driver_pkg)
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg' for CMake module files
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg' for CMake config files
+[2.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_driver_pkg', 'cmake_prefix_path')
+[2.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.ps1'
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.dsv'
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/hook/cmake_prefix_path.sh'
+[2.852s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib'
+[2.852s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/bin'
+[2.852s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib/pkgconfig/sensor_driver_pkg.pc'
+[2.853s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/lib/python3.10/site-packages'
+[2.853s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/bin'
+[2.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.ps1'
+[2.855s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.dsv'
+[2.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.sh'
+[2.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.bash'
+[2.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/sensor_driver_pkg/package.zsh'
+[2.857s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/sensor_driver_pkg/share/colcon-core/packages/sensor_driver_pkg)
+[3.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_ros_com -- -j20 -l20
+[3.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_ros_com
+[3.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[3.467s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[3.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_ros_com
+[3.469s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[3.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[3.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[3.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[3.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[3.471s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib'
+[3.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[3.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[3.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[3.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/bin'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[3.474s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/bin'
+[3.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[3.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[3.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[3.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[3.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[3.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[3.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[3.478s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[3.479s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[3.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[3.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[3.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[3.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib'
+[3.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[3.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[3.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[3.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/bin'
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/px4_ros_com/bin'
+[3.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[3.484s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[3.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[3.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[3.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[3.487s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[5.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20
+[5.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg
+[5.928s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(apply_link_wrench_pkg)
+[5.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg
+[5.929s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg' for CMake module files
+[5.930s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg' for CMake config files
+[5.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('apply_link_wrench_pkg', 'cmake_prefix_path')
+[5.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.ps1'
+[5.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.dsv'
+[5.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.sh'
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib'
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/bin'
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib/pkgconfig/apply_link_wrench_pkg.pc'
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib/python3.10/site-packages'
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/bin'
+[5.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.ps1'
+[5.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.dsv'
+[5.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.sh'
+[5.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.bash'
+[5.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.zsh'
+[5.935s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/colcon-core/packages/apply_link_wrench_pkg)
+[5.935s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(apply_link_wrench_pkg)
+[5.936s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg' for CMake module files
+[5.936s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg' for CMake config files
+[5.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('apply_link_wrench_pkg', 'cmake_prefix_path')
+[5.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.ps1'
+[5.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.dsv'
+[5.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/hook/cmake_prefix_path.sh'
+[5.938s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib'
+[5.938s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/bin'
+[5.938s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib/pkgconfig/apply_link_wrench_pkg.pc'
+[5.938s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/lib/python3.10/site-packages'
+[5.938s] Level 1:colcon.colcon_core.environment:checking '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/bin'
+[5.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.ps1'
+[5.939s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.dsv'
+[5.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.sh'
+[5.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.bash'
+[5.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/apply_link_wrench_pkg/package.zsh'
+[5.941s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg/share/colcon-core/packages/apply_link_wrench_pkg)
+[5.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.942s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.942s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.948s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.948s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.948s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.965s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.965s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/renato/ws_sensor_combined/install/local_setup.ps1'
+[5.966s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/renato/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[5.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/renato/ws_sensor_combined/install/setup.ps1'
+[5.970s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/renato/ws_sensor_combined/install/local_setup.sh'
+[5.971s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/renato/ws_sensor_combined/install/_local_setup_util_sh.py'
+[5.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/renato/ws_sensor_combined/install/setup.sh'
+[5.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/renato/ws_sensor_combined/install/local_setup.bash'
+[5.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/renato/ws_sensor_combined/install/setup.bash'
+[5.976s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/renato/ws_sensor_combined/install/local_setup.zsh'
+[5.977s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/renato/ws_sensor_combined/install/setup.zsh'

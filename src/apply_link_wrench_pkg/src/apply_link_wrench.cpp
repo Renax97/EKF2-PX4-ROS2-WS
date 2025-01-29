@@ -204,10 +204,10 @@ public:
     trigger_timer_ = this->create_wall_timer(10s, std::bind(&ForcePublisherNode::start_force_application, this));
 
     // Timer per pubblicare la forza durante la rampa (ogni 10ms)
-    publish_timer_ = this->create_wall_timer(10ms, std::bind(&ForcePublisherNode::publish_ramp_force, this));
+    publish_timer_ = this->create_wall_timer(4ms, std::bind(&ForcePublisherNode::publish_ramp_force, this));
 
     // Parametri configurabili
-    total_duration_ = 0.5;   // Durata totale del ciclo (secondi)
+    total_duration_ = 0.4;   // Durata totale del ciclo (secondi)
     max_force_z_ = -10.0;    // Forza massima lungo Z
   }
 
@@ -298,6 +298,109 @@ int main(int argc, char **argv)
   return 0;
 }
 
+
+
+//APPLICAZIONE FORZA COSTANTE 
+/*
+#include <rclcpp/rclcpp.hpp>
+#include <ros_gz_interfaces/msg/entity_wrench.hpp>
+#include <chrono>
+
+using namespace std::chrono_literals;
+
+class ForcePublisherNode : public rclcpp::Node
+{
+public:
+  ForcePublisherNode()
+      : Node("force_publisher_node"), applying_force_(false)
+  {
+    // Verifica se il parametro 'use_sim_time' è già dichiarato
+    if (!this->has_parameter("use_sim_time")) {
+      this->declare_parameter("use_sim_time", true);
+    }
+
+    // Publisher per il topic /world/default/wrench
+    publisher_ = this->create_publisher<ros_gz_interfaces::msg::EntityWrench>("/world/default/wrench", 10);
+
+    // Timer per avviare la forza ogni 10 secondi
+    trigger_timer_ = this->create_wall_timer(10s, std::bind(&ForcePublisherNode::start_force_application, this));
+
+    // Timer per pubblicare la forza costante (ogni 10ms)
+    publish_timer_ = this->create_wall_timer(4ms, std::bind(&ForcePublisherNode::publish_constant_force, this));
+
+    // Parametri configurabili
+    duration_ = 0.001;       // Durata dell'applicazione della forza (secondi)
+    constant_force_z_ = -10.0; // Forza costante lungo Z
+  }
+
+private:
+  // Avvia la sequenza di applicazione della forza
+  void start_force_application()
+  {
+    applying_force_ = true;
+    start_time_ = this->now();
+    RCLCPP_INFO(this->get_logger(), "Inizio applicazione forza per %.2f secondi.", duration_);
+  }
+
+  // Pubblica la forza costante per la durata specificata
+  void publish_constant_force()
+  {
+    if (applying_force_) {
+      auto now = this->now();
+      double elapsed_time = (now - start_time_).seconds();
+
+      if (elapsed_time <= duration_) {
+        // Creazione del messaggio
+        auto msg = ros_gz_interfaces::msg::EntityWrench();
+        msg.header.stamp.sec = now.seconds();
+        msg.header.stamp.nanosec = now.nanoseconds() - (msg.header.stamp.sec * 1'000'000'000);
+        msg.entity.id = 66; // ID dell'entità
+        msg.wrench.force.x = 0.0;
+        msg.wrench.force.y = 0.0;
+        msg.wrench.force.z = constant_force_z_;
+        msg.wrench.torque.x = 0.0;
+        msg.wrench.torque.y = 0.0;
+        msg.wrench.torque.z = 0.0;
+
+        // Log della forza pubblicata
+        RCLCPP_INFO(this->get_logger(), "Publishing constant force: Fz=%.2f", msg.wrench.force.z);
+
+        // Pubblicazione del messaggio
+        publisher_->publish(msg);
+      } else {
+        // Fine del ciclo di applicazione della forza
+        applying_force_ = false;
+        RCLCPP_INFO(this->get_logger(), "Fine applicazione forza.");
+      }
+    }
+  }
+
+  // Publisher per la forza
+  rclcpp::Publisher<ros_gz_interfaces::msg::EntityWrench>::SharedPtr publisher_;
+
+  // Timer per avviare la forza ogni 10 secondi
+  rclcpp::TimerBase::SharedPtr trigger_timer_;
+
+  // Timer per pubblicare la forza costante
+  rclcpp::TimerBase::SharedPtr publish_timer_;
+
+  // Variabili di stato
+  bool applying_force_;
+  rclcpp::Time start_time_;
+
+  // Parametri configurabili
+  double duration_;          // Durata dell'applicazione della forza (secondi)
+  double constant_force_z_;  // Forza costante lungo Z
+};
+
+int main(int argc, char **argv)
+{
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<ForcePublisherNode>());
+  rclcpp::shutdown();
+  return 0;
+}
+*/
 
 
 

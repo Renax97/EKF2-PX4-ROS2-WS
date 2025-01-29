@@ -236,6 +236,43 @@ sensor_driver_gz_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_driver_gz_node.dir/build.make CMakeFiles/sensor_driver_gz_node.dir/build
 .PHONY : sensor_driver_gz_node/fast
 
+#=============================================================================
+# Target rules for targets named sensor_driver_bias_computation_node
+
+# Build rule for target.
+sensor_driver_bias_computation_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_driver_bias_computation_node
+.PHONY : sensor_driver_bias_computation_node
+
+# fast build rule for target.
+sensor_driver_bias_computation_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_driver_bias_computation_node.dir/build.make CMakeFiles/sensor_driver_bias_computation_node.dir/build
+.PHONY : sensor_driver_bias_computation_node/fast
+
+src/sensor_driver_bias_computation_node.o: src/sensor_driver_bias_computation_node.cpp.o
+.PHONY : src/sensor_driver_bias_computation_node.o
+
+# target to build an object file
+src/sensor_driver_bias_computation_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_driver_bias_computation_node.dir/build.make CMakeFiles/sensor_driver_bias_computation_node.dir/src/sensor_driver_bias_computation_node.cpp.o
+.PHONY : src/sensor_driver_bias_computation_node.cpp.o
+
+src/sensor_driver_bias_computation_node.i: src/sensor_driver_bias_computation_node.cpp.i
+.PHONY : src/sensor_driver_bias_computation_node.i
+
+# target to preprocess a source file
+src/sensor_driver_bias_computation_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_driver_bias_computation_node.dir/build.make CMakeFiles/sensor_driver_bias_computation_node.dir/src/sensor_driver_bias_computation_node.cpp.i
+.PHONY : src/sensor_driver_bias_computation_node.cpp.i
+
+src/sensor_driver_bias_computation_node.s: src/sensor_driver_bias_computation_node.cpp.s
+.PHONY : src/sensor_driver_bias_computation_node.s
+
+# target to generate assembly for a file
+src/sensor_driver_bias_computation_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_driver_bias_computation_node.dir/build.make CMakeFiles/sensor_driver_bias_computation_node.dir/src/sensor_driver_bias_computation_node.cpp.s
+.PHONY : src/sensor_driver_bias_computation_node.cpp.s
+
 src/sensor_driver_flamingo_node.o: src/sensor_driver_flamingo_node.cpp.o
 .PHONY : src/sensor_driver_flamingo_node.o
 
@@ -323,9 +360,13 @@ help:
 	@echo "... test"
 	@echo "... sensor_driver_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... sensor_driver_bias_computation_node"
 	@echo "... sensor_driver_flamingo_node"
 	@echo "... sensor_driver_gz_node"
 	@echo "... sensor_driver_node"
+	@echo "... src/sensor_driver_bias_computation_node.o"
+	@echo "... src/sensor_driver_bias_computation_node.i"
+	@echo "... src/sensor_driver_bias_computation_node.s"
 	@echo "... src/sensor_driver_flamingo_node.o"
 	@echo "... src/sensor_driver_flamingo_node.i"
 	@echo "... src/sensor_driver_flamingo_node.s"

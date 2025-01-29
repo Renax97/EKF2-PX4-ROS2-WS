@@ -1,1 +1,2 @@
-/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg/ament_cmake_environment_hooks/local_setup.dsv
+source;share/apply_link_wrench_pkg/environment/ament_prefix_path.sh
+source;share/apply_link_wrench_pkg/environment/path.sh

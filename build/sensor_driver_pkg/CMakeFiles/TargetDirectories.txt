@@ -3,6 +3,7 @@
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/sensor_driver_node.dir
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/sensor_driver_flamingo_node.dir
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/sensor_driver_gz_node.dir
+/home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/sensor_driver_bias_computation_node.dir
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/test.dir
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/edit_cache.dir
 /home/renato/ws_sensor_combined/build/sensor_driver_pkg/CMakeFiles/rebuild_cache.dir

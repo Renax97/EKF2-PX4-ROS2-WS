@@ -1,0 +1,147 @@
+[0.020s] Invoking command in '/home/renato/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/renato/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/px4_ros_com
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.116s] -- Detecting C compiler ABI info
+[0.173s] -- Detecting C compiler ABI info - done
+[0.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.178s] -- Detecting C compile features
+[0.178s] -- Detecting C compile features - done
+[0.180s] -- Detecting CXX compiler ABI info
+[0.242s] -- Detecting CXX compiler ABI info - done
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.250s] -- Detecting CXX compile features - done
+[0.251s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.706s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.786s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.811s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.815s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.821s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.829s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.841s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.864s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.870s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.871s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.889s] -- Found px4_msgs: 2.0.1 (/home/renato/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[0.897s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.924s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.927s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.995s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.017s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.053s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.060s] -- Looking for pthread.h
+[1.114s] -- Looking for pthread.h - found
+[1.114s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.174s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.175s] -- Found Threads: TRUE  
+[1.204s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.218s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[1.226s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.302s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.306s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.307s] -- Configured cppcheck include dirs: /home/renato/ws_sensor_combined/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/renato/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com>
+[1.307s] -- Configured cppcheck exclude dirs and/or files: 
+[1.309s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.309s] -- Configured cpplint exclude dirs and/or files: 
+[1.310s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.310s] -- Added test 'lint_cmake' to check CMake code style
+[1.311s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.313s] -- Added test 'uncrustify' to check C / C++ code style
+[1.313s] -- Configured uncrustify additional arguments: 
+[1.313s] -- Added test 'xmllint' to check XML markup files
+[1.315s] -- Configuring done
+[1.329s] -- Generating done
+[1.335s] -- Build files have been written to: /home/renato/ws_sensor_combined/build/px4_ros_com
+[1.343s] Invoked command in '/home/renato/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/renato/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/px4_ros_com
+[1.345s] Invoking command in '/home/renato/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_ros_com -- -j20 -l20
+[1.389s] [ 16%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[1.389s] [  8%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[1.390s] [ 33%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[1.390s] [ 33%] [32mBuilding CXX object CMakeFiles/offboard_control_srv.dir/src/examples/offboard/offboard_control_srv.cpp.o[0m
+[1.390s] [ 41%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[1.391s] [ 50%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[1.392s] [ 50%] Built target ament_cmake_python_copy_px4_ros_com
+[1.764s] running egg_info
+[1.765s] creating px4_ros_com.egg-info
+[1.783s] writing px4_ros_com.egg-info/PKG-INFO
+[1.783s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.783s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.783s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.839s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.839s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.928s] [ 50%] Built target ament_cmake_python_build_px4_ros_com_egg
+[5.138s] [ 58%] [32m[1mLinking CXX executable offboard_control[0m
+[5.152s] [ 66%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[5.336s] [ 66%] Built target offboard_control
+[5.363s] [ 66%] Built target debug_vect_advertiser
+[5.585s] [ 75%] [32m[1mLinking CXX executable offboard_control_srv[0m
+[5.757s] [ 75%] Built target offboard_control_srv
+[7.156s] [ 83%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[7.415s] [ 83%] Built target sensor_combined_listener
+[7.495s] [ 91%] [32m[1mLinking CXX shared library libframe_transforms.so[0m
+[7.676s] [ 91%] Built target frame_transforms
+[8.408s] [100%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[8.648s] [100%] Built target vehicle_gps_position_listener
+[8.664s] Invoked command in '/home/renato/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_ros_com -- -j20 -l20
+[8.666s] Invoking command in '/home/renato/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_ros_com
+[8.671s] -- Install configuration: ""
+[8.671s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[8.673s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""
+[8.673s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[8.675s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""
+[8.675s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[8.675s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""
+[8.675s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[8.676s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[8.676s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[8.677s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv" to ""
+[8.677s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[8.677s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[8.677s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com
+[8.677s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[8.678s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so
+[8.679s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so" to ""
+[8.679s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch
+[8.679s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[8.680s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[8.703s] Listing '/home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[8.703s] Compiling '/home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py'...
+[8.703s] Compiling '/home/renato/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py'...
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[8.706s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[8.707s] -- Installing: /home/renato/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml
+[8.709s] Invoked command in '/home/renato/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/px4_ros_com:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/ws_sensor_combined/install/px4_ros_com/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/px4_ros_com

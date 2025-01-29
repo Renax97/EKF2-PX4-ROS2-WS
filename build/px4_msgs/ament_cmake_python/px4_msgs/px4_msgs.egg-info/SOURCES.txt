@@ -59,6 +59,7 @@ px4_msgs/msg/_estimator_states.py
 px4_msgs/msg/_estimator_status.py
 px4_msgs/msg/_estimator_status_flags.py
 px4_msgs/msg/_event.py
+px4_msgs/msg/_external_wrench_estimation.py
 px4_msgs/msg/_failsafe_flags.py
 px4_msgs/msg/_failure_detector_status.py
 px4_msgs/msg/_figure_eight_status.py

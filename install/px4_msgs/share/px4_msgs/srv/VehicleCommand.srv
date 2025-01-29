@@ -1,1 +1,3 @@
-/home/renato/ws_sensor_combined/src/px4_msgs/srv/VehicleCommand.srv
+VehicleCommand request
+---
+VehicleCommandAck reply

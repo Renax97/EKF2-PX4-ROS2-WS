@@ -6,7 +6,7 @@
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/debug_vect_advertiser.dir
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/offboard_control.dir
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/offboard_control_srv.dir
-/home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/ament_cmake_python_symlink_px4_ros_com.dir
+/home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/ament_cmake_python_copy_px4_ros_com.dir
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/test.dir
 /home/renato/ws_sensor_combined/build/px4_ros_com/CMakeFiles/edit_cache.dir

@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from px4_msgs/msg/ExternalWrenchEstimation.msg
+// generated code does not contain a copyright notice
+
+
+module px4_msgs {
+  module msg {
+    module ExternalWrenchEstimation_Constants {
+      @verbatim (language="comment", text=
+        "Lunghezza massima della coda del topic")
+      const uint8 ORB_QUEUE_LENGTH = 8;
+    };
+    struct ExternalWrenchEstimation {
+      @verbatim (language="comment", text=
+        "Tempo dal boot del sistema, in microsecondi")
+      uint64 timestamp;
+
+      @verbatim (language="comment", text=
+        "Componente X della forza (es. in Newton)")
+      float force_x;
+
+      @verbatim (language="comment", text=
+        "Componente Y della forza (es. in Newton)")
+      float force_y;
+
+      @verbatim (language="comment", text=
+        "Componente Z della forza (es. in Newton)")
+      float force_z;
+
+      @verbatim (language="comment", text=
+        "Componente X del momento torcente (es. in Newton-metro)")
+      float torque_x;
+
+      @verbatim (language="comment", text=
+        "Componente Y del momento torcente (es. in Newton-metro)")
+      float torque_y;
+
+      @verbatim (language="comment", text=
+        "Componente Z del momento torcente (es. in Newton-metro)")
+      float torque_z;
+    };
+  };
+};

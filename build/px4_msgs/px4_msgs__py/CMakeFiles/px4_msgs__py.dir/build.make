@@ -123,6 +123,7 @@ px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimato
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status_flags.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_event.py
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failsafe_flags.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failure_detector_status.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_figure_eight_status.py
@@ -354,6 +355,7 @@ px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimato
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status_flags_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_event_s.c
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failure_detector_status_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_figure_eight_status_s.c
@@ -597,6 +599,7 @@ rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: ros
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/EstimatorStatus.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/EstimatorStatusFlags.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/Event.idl
+rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/ExternalWrenchEstimation.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/FailsafeFlags.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/FailureDetectorStatus.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/FigureEightStatus.idl
@@ -944,6 +947,9 @@ rosidl_generator_py/px4_msgs/msg/_estimator_status_flags.py: rosidl_generator_py
 
 rosidl_generator_py/px4_msgs/msg/_event.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_event.py
+
+rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation.py
 
 rosidl_generator_py/px4_msgs/msg/_failsafe_flags.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_failsafe_flags.py
@@ -1638,6 +1644,9 @@ rosidl_generator_py/px4_msgs/msg/_estimator_status_flags_s.c: rosidl_generator_p
 rosidl_generator_py/px4_msgs/msg/_event_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_event_s.c
 
+rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation_s.c
+
 rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c
 
@@ -2276,6 +2285,8 @@ px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status_flags_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_estimator_status_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_event.py
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_event_s.c
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation.py
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failsafe_flags.py
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_failure_detector_status.py

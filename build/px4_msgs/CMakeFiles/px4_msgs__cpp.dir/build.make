@@ -336,6 +336,11 @@ CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__builde
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__struct.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__traits.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__type_support.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/external_wrench_estimation.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__builder.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__struct.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__traits.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__type_support.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/failsafe_flags.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/failsafe_flags__builder.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/failsafe_flags__struct.hpp
@@ -1282,6 +1287,7 @@ rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/ms
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/EstimatorStatus.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/EstimatorStatusFlags.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/Event.idl
+rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/ExternalWrenchEstimation.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/FailsafeFlags.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/FailureDetectorStatus.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/FigureEightStatus.idl
@@ -2268,6 +2274,21 @@ rosidl_generator_cpp/px4_msgs/msg/detail/event__traits.hpp: rosidl_generator_cpp
 
 rosidl_generator_cpp/px4_msgs/msg/detail/event__type_support.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/event__type_support.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/external_wrench_estimation.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/external_wrench_estimation.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__builder.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__builder.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__struct.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__struct.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__traits.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__traits.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__type_support.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__type_support.hpp
 
 rosidl_generator_cpp/px4_msgs/msg/failsafe_flags.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/failsafe_flags.hpp
@@ -5145,6 +5166,10 @@ px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__builder.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__struct.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__traits.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/event__type_support.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__builder.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__struct.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__traits.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/external_wrench_estimation__type_support.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/failsafe_flags__builder.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/failsafe_flags__struct.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/failsafe_flags__traits.hpp
@@ -5861,6 +5886,7 @@ px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/estimator_states.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/estimator_status.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/estimator_status_flags.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/event.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/external_wrench_estimation.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/failsafe_flags.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/failure_detector_status.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/figure_eight_status.hpp

@@ -1,1 +1,4 @@
-/home/renato/ws_sensor_combined/src/px4_msgs/msg/OpenDroneIdSelfId.msg
+uint64 timestamp
+uint8[20] id_or_mac
+uint8 description_type
+char[23] description

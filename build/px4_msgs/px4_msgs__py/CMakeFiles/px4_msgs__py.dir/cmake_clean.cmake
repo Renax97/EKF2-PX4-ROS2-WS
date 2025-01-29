@@ -111,6 +111,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/px4_msgs/msg/_estimator_status_s.c"
   "../rosidl_generator_py/px4_msgs/msg/_event.py"
   "../rosidl_generator_py/px4_msgs/msg/_event_s.c"
+  "../rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation.py"
+  "../rosidl_generator_py/px4_msgs/msg/_external_wrench_estimation_s.c"
   "../rosidl_generator_py/px4_msgs/msg/_failsafe_flags.py"
   "../rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c"
   "../rosidl_generator_py/px4_msgs/msg/_failure_detector_status.py"

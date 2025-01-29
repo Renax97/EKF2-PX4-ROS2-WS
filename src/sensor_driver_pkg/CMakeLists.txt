@@ -11,17 +11,20 @@ find_package(px4_msgs REQUIRED)
 add_executable(sensor_driver_node src/sensor_driver_node.cpp)
 add_executable(sensor_driver_flamingo_node src/sensor_driver_flamingo_node.cpp)
 add_executable(sensor_driver_gz_node src/sensor_driver_gz_node.cpp)
+add_executable(sensor_driver_bias_computation_node src/sensor_driver_bias_computation_node.cpp)
 
 # Specifica le dipendenze per gli eseguibili
 ament_target_dependencies(sensor_driver_node rclcpp geometry_msgs)
 ament_target_dependencies(sensor_driver_flamingo_node rclcpp geometry_msgs)
 ament_target_dependencies(sensor_driver_gz_node rclcpp geometry_msgs px4_msgs)
+ament_target_dependencies(sensor_driver_bias_computation_node rclcpp geometry_msgs)
 
 # Installa gli eseguibili
 install(TARGETS
   sensor_driver_node
   sensor_driver_flamingo_node
   sensor_driver_gz_node
+  sensor_driver_bias_computation_node
   DESTINATION lib/${PROJECT_NAME})
 
 # Richiesta di ament_package

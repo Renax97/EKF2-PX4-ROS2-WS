@@ -120,6 +120,7 @@ CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/EstimatorS
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/EstimatorStatus.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/EstimatorStatusFlags.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/Event.msg
+CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/ExternalWrenchEstimation.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/FailsafeFlags.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/FailureDetectorStatus.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/FigureEightStatus.msg

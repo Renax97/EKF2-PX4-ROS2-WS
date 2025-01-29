@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/renato/ws_sensor_combined/build/load_cell_publisher_pkg/load_cell_publisher_node" "TARGETS" "load_cell_publisher_node" "DESTINATION" "lib/load_cell_publisher_pkg")

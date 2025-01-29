@@ -106,6 +106,8 @@ msg/EstimatorStatusFlags.idl
 msg/EstimatorStatusFlags.msg
 msg/Event.idl
 msg/Event.msg
+msg/ExternalWrenchEstimation.idl
+msg/ExternalWrenchEstimation.msg
 msg/FailsafeFlags.idl
 msg/FailsafeFlags.msg
 msg/FailureDetectorStatus.idl

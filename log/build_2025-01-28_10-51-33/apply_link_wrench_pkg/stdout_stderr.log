@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target apply_link_wrench[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/apply_link_wrench.dir/src/apply_link_wrench.cpp.o[0m
+[01m[K/home/renato/ws_sensor_combined/src/apply_link_wrench_pkg/src/apply_link_wrench.cpp:304:1:[m[K [01;31m[Kerror: [m[Kunterminated comment
+  304 | [01;31m[K/[m[K*
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/apply_link_wrench.dir/build.make:76: CMakeFiles/apply_link_wrench.dir/src/apply_link_wrench.cpp.o] Errore 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/apply_link_wrench.dir/all] Errore 2
+gmake: *** [Makefile:146: all] Errore 2
