@@ -90,8 +90,8 @@ cdr_serialize(
   cdr << (ros_message.battery_low_remaining_time ? true : false);
   // Member: battery_unhealthy
   cdr << (ros_message.battery_unhealthy ? true : false);
-  // Member: geofence_breached
-  cdr << (ros_message.geofence_breached ? true : false);
+  // Member: primary_geofence_breached
+  cdr << (ros_message.primary_geofence_breached ? true : false);
   // Member: mission_failure
   cdr << (ros_message.mission_failure ? true : false);
   // Member: vtol_fixed_wing_system_failure
@@ -102,8 +102,6 @@ cdr_serialize(
   cdr << (ros_message.flight_time_limit_exceeded ? true : false);
   // Member: local_position_accuracy_low
   cdr << (ros_message.local_position_accuracy_low ? true : false);
-  // Member: navigator_failure
-  cdr << (ros_message.navigator_failure ? true : false);
   // Member: fd_critical_failure
   cdr << (ros_message.fd_critical_failure ? true : false);
   // Member: fd_esc_arming_failure
@@ -264,11 +262,11 @@ cdr_deserialize(
     ros_message.battery_unhealthy = tmp ? true : false;
   }
 
-  // Member: geofence_breached
+  // Member: primary_geofence_breached
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.geofence_breached = tmp ? true : false;
+    ros_message.primary_geofence_breached = tmp ? true : false;
   }
 
   // Member: mission_failure
@@ -304,13 +302,6 @@ cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message.local_position_accuracy_low = tmp ? true : false;
-  }
-
-  // Member: navigator_failure
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.navigator_failure = tmp ? true : false;
   }
 
   // Member: fd_critical_failure
@@ -531,9 +522,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: geofence_breached
+  // Member: primary_geofence_breached
   {
-    size_t item_size = sizeof(ros_message.geofence_breached);
+    size_t item_size = sizeof(ros_message.primary_geofence_breached);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -564,12 +555,6 @@ get_serialized_size(
   // Member: local_position_accuracy_low
   {
     size_t item_size = sizeof(ros_message.local_position_accuracy_low);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: navigator_failure
-  {
-    size_t item_size = sizeof(ros_message.navigator_failure);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -867,7 +852,7 @@ max_serialized_size_FailsafeFlags(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: geofence_breached
+  // Member: primary_geofence_breached
   {
     size_t array_size = 1;
 
@@ -908,14 +893,6 @@ max_serialized_size_FailsafeFlags(
   }
 
   // Member: local_position_accuracy_low
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: navigator_failure
   {
     size_t array_size = 1;
 

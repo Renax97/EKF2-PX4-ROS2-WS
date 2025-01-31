@@ -34,8 +34,6 @@ typedef struct px4_msgs__msg__VehicleAirData
   float baro_pressure_pa;
   /// air density
   float rho;
-  /// equivalent airspeed to true airspeed conversion factor
-  float eas2tas;
   /// Calibration changed counter. Monotonically increases whenever calibration changes.
   uint8_t calibration_count;
 } px4_msgs__msg__VehicleAirData;

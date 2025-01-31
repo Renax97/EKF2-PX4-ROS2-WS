@@ -208,7 +208,7 @@ public:
 
     // Parametri configurabili
     total_duration_ = 0.4;   // Durata totale del ciclo (secondi)
-    max_force_z_ = -10.0;    // Forza massima lungo Z
+    max_force_z_ = -20.0;    // Forza massima lungo Z
   }
 
 private:

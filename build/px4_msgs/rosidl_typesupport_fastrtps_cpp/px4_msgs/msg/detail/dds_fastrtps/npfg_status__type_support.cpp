@@ -62,8 +62,6 @@ cdr_serialize(
   cdr << ros_message.p_gain;
   // Member: time_const
   cdr << ros_message.time_const;
-  // Member: can_run_factor
-  cdr << ros_message.can_run_factor;
   return true;
 }
 
@@ -117,9 +115,6 @@ cdr_deserialize(
 
   // Member: time_const
   cdr >> ros_message.time_const;
-
-  // Member: can_run_factor
-  cdr >> ros_message.can_run_factor;
 
   return true;
 }
@@ -224,12 +219,6 @@ get_serialized_size(
   // Member: time_const
   {
     size_t item_size = sizeof(ros_message.time_const);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: can_run_factor
-  {
-    size_t item_size = sizeof(ros_message.can_run_factor);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -391,15 +380,6 @@ max_serialized_size_NpfgStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: can_run_factor
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -408,7 +388,7 @@ max_serialized_size_NpfgStatus(
     using DataType = px4_msgs::msg::NpfgStatus;
     is_plain =
       (
-      offsetof(DataType, can_run_factor) +
+      offsetof(DataType, time_const) +
       last_member_size
       ) == ret_val;
   }

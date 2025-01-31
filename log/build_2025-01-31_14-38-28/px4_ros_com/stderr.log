@@ -1,0 +1,23 @@
+[01m[K/home/renato/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/vehicle_gps_position_listener.cpp:[m[K In lambda function:
+[01m[K/home/renato/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/vehicle_gps_position_listener.cpp:60:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct px4_msgs::msg::SensorGps_<std::allocator<void> >[m[K’ has no member named ‘[01m[Klatitude_deg[m[K’
+   60 |                         std::cout << "lat: " << msg->[01;31m[Klatitude_deg[m[K  << std::endl;
+      |                                                      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/renato/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/vehicle_gps_position_listener.cpp:61:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct px4_msgs::msg::SensorGps_<std::allocator<void> >[m[K’ has no member named ‘[01m[Klongitude_deg[m[K’
+   61 |                         std::cout << "lon: " << msg->[01;31m[Klongitude_deg[m[K << std::endl;
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/renato/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/vehicle_gps_position_listener.cpp:62:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct px4_msgs::msg::SensorGps_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kaltitude_msl_m[m[K’
+   62 |                         std::cout << "alt: " << msg->[01;31m[Kaltitude_msl_m[m[K  << std::endl;
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/renato/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/vehicle_gps_position_listener.cpp:63:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct px4_msgs::msg::SensorGps_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kaltitude_ellipsoid_m[m[K’; did you mean ‘[01m[Kalt_ellipsoid[m[K’?
+   63 |                         std::cout << "alt_ellipsoid: " << msg->[01;31m[Kaltitude_ellipsoid_m[m[K << std::endl;
+      |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                [32m[Kalt_ellipsoid[m[K
+gmake[2]: *** [CMakeFiles/vehicle_gps_position_listener.dir/build.make:76: CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o] Errore 1
+gmake[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/vehicle_gps_position_listener.dir/all] Errore 2
+gmake[1]: *** Attesa per i processi non terminati....
+/usr/bin/ld: CMakeFiles/offboard_control_srv.dir/src/examples/offboard/offboard_control_srv.cpp.o: in function `rclcpp::Client<px4_msgs::srv::VehicleCommand>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_s&)':
+offboard_control_srv.cpp:(.text._ZN6rclcpp6ClientIN8px4_msgs3srv14VehicleCommandEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_s[_ZN6rclcpp6ClientIN8px4_msgs3srv14VehicleCommandEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_s]+0xc8): undefined reference to `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<px4_msgs::srv::VehicleCommand>()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/offboard_control_srv.dir/build.make:159: offboard_control_srv] Errore 1
+gmake[1]: *** [CMakeFiles/Makefile2:280: CMakeFiles/offboard_control_srv.dir/all] Errore 2
+gmake: *** [Makefile:146: all] Errore 2

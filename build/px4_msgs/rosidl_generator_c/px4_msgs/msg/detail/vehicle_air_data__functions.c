@@ -24,7 +24,6 @@ px4_msgs__msg__VehicleAirData__init(px4_msgs__msg__VehicleAirData * msg)
   // baro_temp_celcius
   // baro_pressure_pa
   // rho
-  // eas2tas
   // calibration_count
   return true;
 }
@@ -42,7 +41,6 @@ px4_msgs__msg__VehicleAirData__fini(px4_msgs__msg__VehicleAirData * msg)
   // baro_temp_celcius
   // baro_pressure_pa
   // rho
-  // eas2tas
   // calibration_count
 }
 
@@ -80,10 +78,6 @@ px4_msgs__msg__VehicleAirData__are_equal(const px4_msgs__msg__VehicleAirData * l
   if (lhs->rho != rhs->rho) {
     return false;
   }
-  // eas2tas
-  if (lhs->eas2tas != rhs->eas2tas) {
-    return false;
-  }
   // calibration_count
   if (lhs->calibration_count != rhs->calibration_count) {
     return false;
@@ -113,8 +107,6 @@ px4_msgs__msg__VehicleAirData__copy(
   output->baro_pressure_pa = input->baro_pressure_pa;
   // rho
   output->rho = input->rho;
-  // eas2tas
-  output->eas2tas = input->eas2tas;
   // calibration_count
   output->calibration_count = input->calibration_count;
   return true;

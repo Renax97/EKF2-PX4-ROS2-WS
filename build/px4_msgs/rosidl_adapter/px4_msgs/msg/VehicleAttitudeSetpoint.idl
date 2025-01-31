@@ -13,6 +13,18 @@ module px4_msgs {
       uint64 timestamp;
 
       @verbatim (language="comment", text=
+        "body angle in NED frame (can be NaN for FW)")
+      float roll_body;
+
+      @verbatim (language="comment", text=
+        "body angle in NED frame (can be NaN for FW)")
+      float pitch_body;
+
+      @verbatim (language="comment", text=
+        "body angle in NED frame (can be NaN for FW)")
+      float yaw_body;
+
+      @verbatim (language="comment", text=
         "rad/s (commanded by user)")
       float yaw_sp_move_rate;
 
@@ -24,7 +36,7 @@ module px4_msgs {
       @verbatim (language="comment", text=
         "For clarification: For multicopters thrust_body[0] and thrust[1] are usually 0 and thrust[2] is the negative throttle demand." "\n"
         "For fixed wings thrust_x is the throttle demand and thrust_y, thrust_z will usually be zero." "\n"
-        "Normalized thrust command in body FRD frame [-1,1]")
+        "Normalized thrust command in body NED frame [-1,1]")
       float__3 thrust_body;
 
       @verbatim (language="comment", text=

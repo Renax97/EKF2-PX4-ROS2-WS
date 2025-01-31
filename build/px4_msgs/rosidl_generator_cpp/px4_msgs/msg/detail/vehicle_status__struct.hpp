@@ -47,15 +47,11 @@ struct VehicleStatus_
       this->nav_state_timestamp = 0ull;
       this->nav_state_user_intention = 0;
       this->nav_state = 0;
-      this->executor_in_charge = 0;
-      this->valid_nav_states_mask = 0ul;
-      this->can_set_nav_states_mask = 0ul;
       this->failure_detector_status = 0;
       this->hil_state = 0;
       this->vehicle_type = 0;
       this->failsafe = false;
       this->failsafe_and_user_took_over = false;
-      this->failsafe_defer_state = 0;
       this->gcs_connection_lost = false;
       this->gcs_connection_lost_counter = 0;
       this->high_latency_data_link_lost = false;
@@ -97,15 +93,11 @@ struct VehicleStatus_
       this->nav_state_timestamp = 0ull;
       this->nav_state_user_intention = 0;
       this->nav_state = 0;
-      this->executor_in_charge = 0;
-      this->valid_nav_states_mask = 0ul;
-      this->can_set_nav_states_mask = 0ul;
       this->failure_detector_status = 0;
       this->hil_state = 0;
       this->vehicle_type = 0;
       this->failsafe = false;
       this->failsafe_and_user_took_over = false;
-      this->failsafe_defer_state = 0;
       this->gcs_connection_lost = false;
       this->gcs_connection_lost_counter = 0;
       this->high_latency_data_link_lost = false;
@@ -160,15 +152,6 @@ struct VehicleStatus_
   using _nav_state_type =
     uint8_t;
   _nav_state_type nav_state;
-  using _executor_in_charge_type =
-    uint8_t;
-  _executor_in_charge_type executor_in_charge;
-  using _valid_nav_states_mask_type =
-    uint32_t;
-  _valid_nav_states_mask_type valid_nav_states_mask;
-  using _can_set_nav_states_mask_type =
-    uint32_t;
-  _can_set_nav_states_mask_type can_set_nav_states_mask;
   using _failure_detector_status_type =
     uint16_t;
   _failure_detector_status_type failure_detector_status;
@@ -184,9 +167,6 @@ struct VehicleStatus_
   using _failsafe_and_user_took_over_type =
     bool;
   _failsafe_and_user_took_over_type failsafe_and_user_took_over;
-  using _failsafe_defer_state_type =
-    uint8_t;
-  _failsafe_defer_state_type failsafe_defer_state;
   using _gcs_connection_lost_type =
     bool;
   _gcs_connection_lost_type gcs_connection_lost;
@@ -312,24 +292,6 @@ struct VehicleStatus_
     this->nav_state = _arg;
     return *this;
   }
-  Type & set__executor_in_charge(
-    const uint8_t & _arg)
-  {
-    this->executor_in_charge = _arg;
-    return *this;
-  }
-  Type & set__valid_nav_states_mask(
-    const uint32_t & _arg)
-  {
-    this->valid_nav_states_mask = _arg;
-    return *this;
-  }
-  Type & set__can_set_nav_states_mask(
-    const uint32_t & _arg)
-  {
-    this->can_set_nav_states_mask = _arg;
-    return *this;
-  }
   Type & set__failure_detector_status(
     const uint16_t & _arg)
   {
@@ -358,12 +320,6 @@ struct VehicleStatus_
     const bool & _arg)
   {
     this->failsafe_and_user_took_over = _arg;
-    return *this;
-  }
-  Type & set__failsafe_defer_state(
-    const uint8_t & _arg)
-  {
-    this->failsafe_defer_state = _arg;
     return *this;
   }
   Type & set__gcs_connection_lost(
@@ -506,13 +462,23 @@ struct VehicleStatus_
   }
 
   // constant declarations
-  static constexpr uint8_t ARMING_STATE_DISARMED =
+  static constexpr uint8_t ARMING_STATE_INIT =
+    0u;
+  static constexpr uint8_t ARMING_STATE_STANDBY =
     1u;
   static constexpr uint8_t ARMING_STATE_ARMED =
     2u;
+  static constexpr uint8_t ARMING_STATE_STANDBY_ERROR =
+    3u;
+  static constexpr uint8_t ARMING_STATE_SHUTDOWN =
+    4u;
+  static constexpr uint8_t ARMING_STATE_IN_AIR_RESTORE =
+    5u;
+  static constexpr uint8_t ARMING_STATE_MAX =
+    6u;
   static constexpr uint8_t ARM_DISARM_REASON_TRANSITION_TO_STANDBY =
     0u;
-  static constexpr uint8_t ARM_DISARM_REASON_STICK_GESTURE =
+  static constexpr uint8_t ARM_DISARM_REASON_RC_STICK =
     1u;
   static constexpr uint8_t ARM_DISARM_REASON_RC_SWITCH =
     2u;
@@ -550,17 +516,13 @@ struct VehicleStatus_
     4u;
   static constexpr uint8_t NAVIGATION_STATE_AUTO_RTL =
     5u;
-  static constexpr uint8_t NAVIGATION_STATE_POSITION_SLOW =
-    6u;
-  static constexpr uint8_t NAVIGATION_STATE_FREE5 =
-    7u;
-  static constexpr uint8_t NAVIGATION_STATE_FREE4 =
+  static constexpr uint8_t NAVIGATION_STATE_UNUSED3 =
     8u;
-  static constexpr uint8_t NAVIGATION_STATE_FREE3 =
+  static constexpr uint8_t NAVIGATION_STATE_UNUSED =
     9u;
   static constexpr uint8_t NAVIGATION_STATE_ACRO =
     10u;
-  static constexpr uint8_t NAVIGATION_STATE_FREE2 =
+  static constexpr uint8_t NAVIGATION_STATE_UNUSED1 =
     11u;
   static constexpr uint8_t NAVIGATION_STATE_DESCEND =
     12u;
@@ -570,7 +532,7 @@ struct VehicleStatus_
     14u;
   static constexpr uint8_t NAVIGATION_STATE_STAB =
     15u;
-  static constexpr uint8_t NAVIGATION_STATE_FREE1 =
+  static constexpr uint8_t NAVIGATION_STATE_UNUSED2 =
     16u;
   static constexpr uint8_t NAVIGATION_STATE_AUTO_TAKEOFF =
     17u;
@@ -584,24 +546,8 @@ struct VehicleStatus_
     21u;
   static constexpr uint8_t NAVIGATION_STATE_AUTO_VTOL_TAKEOFF =
     22u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL1 =
-    23u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL2 =
-    24u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL3 =
-    25u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL4 =
-    26u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL5 =
-    27u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL6 =
-    28u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL7 =
-    29u;
-  static constexpr uint8_t NAVIGATION_STATE_EXTERNAL8 =
-    30u;
   static constexpr uint8_t NAVIGATION_STATE_MAX =
-    31u;
+    23u;
   static constexpr uint16_t FAILURE_NONE =
     0u;
   static constexpr uint16_t FAILURE_ROLL =
@@ -634,12 +580,6 @@ struct VehicleStatus_
     3u;
   static constexpr uint8_t VEHICLE_TYPE_AIRSHIP =
     4u;
-  static constexpr uint8_t FAILSAFE_DEFER_STATE_DISABLED =
-    0u;
-  static constexpr uint8_t FAILSAFE_DEFER_STATE_ENABLED =
-    1u;
-  static constexpr uint8_t FAILSAFE_DEFER_STATE_WOULD_FAILSAFE =
-    2u;
 
   // pointer types
   using RawPtr =
@@ -708,15 +648,6 @@ struct VehicleStatus_
     if (this->nav_state != other.nav_state) {
       return false;
     }
-    if (this->executor_in_charge != other.executor_in_charge) {
-      return false;
-    }
-    if (this->valid_nav_states_mask != other.valid_nav_states_mask) {
-      return false;
-    }
-    if (this->can_set_nav_states_mask != other.can_set_nav_states_mask) {
-      return false;
-    }
     if (this->failure_detector_status != other.failure_detector_status) {
       return false;
     }
@@ -730,9 +661,6 @@ struct VehicleStatus_
       return false;
     }
     if (this->failsafe_and_user_took_over != other.failsafe_and_user_took_over) {
-      return false;
-    }
-    if (this->failsafe_defer_state != other.failsafe_defer_state) {
       return false;
     }
     if (this->gcs_connection_lost != other.gcs_connection_lost) {
@@ -820,7 +748,12 @@ using VehicleStatus =
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_DISARMED;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_INIT;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_STANDBY;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -830,12 +763,32 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_ARMED;
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_STANDBY_ERROR;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_SHUTDOWN;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_IN_AIR_RESTORE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARMING_STATE_MAX;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
 constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARM_DISARM_REASON_TRANSITION_TO_STANDBY;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARM_DISARM_REASON_STICK_GESTURE;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::ARM_DISARM_REASON_RC_STICK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -930,22 +883,12 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_AUTO_RTL;
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_POSITION_SLOW;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_UNUSED3;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_FREE5;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_FREE4;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_FREE3;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_UNUSED;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -955,7 +898,7 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_ACRO;
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_FREE2;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_UNUSED1;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -980,7 +923,7 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_STAB;
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_FREE1;
+constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_UNUSED2;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -1011,46 +954,6 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_ORBIT;
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_AUTO_VTOL_TAKEOFF;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL1;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL2;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL3;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL4;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL5;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL6;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL7;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::NAVIGATION_STATE_EXTERNAL8;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -1136,21 +1039,6 @@ constexpr uint8_t VehicleStatus_<ContainerAllocator>::VEHICLE_TYPE_ROVER;
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint8_t VehicleStatus_<ContainerAllocator>::VEHICLE_TYPE_AIRSHIP;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::FAILSAFE_DEFER_STATE_DISABLED;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::FAILSAFE_DEFER_STATE_ENABLED;
-#endif  // __cplusplus < 201703L
-#if __cplusplus < 201703L
-// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
-template<typename ContainerAllocator>
-constexpr uint8_t VehicleStatus_<ContainerAllocator>::FAILSAFE_DEFER_STATE_WOULD_FAILSAFE;
 #endif  // __cplusplus < 201703L
 
 }  // namespace msg

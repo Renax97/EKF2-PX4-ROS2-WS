@@ -9,4 +9,3 @@ float32 torque_y  # Componente Y del momento torcente (es. in Newton-metro)
 float32 torque_z  # Componente Z del momento torcente (es. in Newton-metro)
 
 uint8 ORB_QUEUE_LENGTH = 8  # Lunghezza massima della coda del topic
-

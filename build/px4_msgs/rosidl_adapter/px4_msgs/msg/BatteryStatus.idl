@@ -50,7 +50,7 @@ module px4_msgs {
         "Under-temperature fault")
       const uint8 BATTERY_FAULT_UNDER_TEMPERATURE = 5;
       @verbatim (language="comment", text=
-        "Vehicle voltage is not compatible with this battery (batteries on same power rail should have similar voltage).")
+        "Vehicle voltage is not compatible with battery one")
       const uint8 BATTERY_FAULT_INCOMPATIBLE_VOLTAGE = 6;
       @verbatim (language="comment", text=
         "Battery firmware is not compatible with current autopilot firmware")
@@ -62,11 +62,23 @@ module px4_msgs {
         "hardware problem")
       const uint8 BATTERY_FAULT_HARDWARE_FAILURE = 9;
       @verbatim (language="comment", text=
-        "Battery had a problem while arming")
-      const uint8 BATTERY_FAULT_FAILED_TO_ARM = 10;
+        "Over-temperature")
+      const uint8 BATTERY_WARNING_OVER_TEMPERATURE = 10;
       @verbatim (language="comment", text=
         "Counter - keep it as last element!")
       const uint8 BATTERY_FAULT_COUNT = 11;
+      @verbatim (language="comment", text=
+        "Battery does not support a mode, or if it does, is operational")
+      const uint8 BATTERY_MODE_UNKNOWN = 0;
+      @verbatim (language="comment", text=
+        "Battery is auto discharging (towards storage level)")
+      const uint8 BATTERY_MODE_AUTO_DISCHARGING = 1;
+      @verbatim (language="comment", text=
+        "Battery in hot-swap mode")
+      const uint8 BATTERY_MODE_HOT_SWAP = 2;
+      @verbatim (language="comment", text=
+        "Counter - keep it as last element (once we're fully migrated to events interface we can just comment this)!")
+      const uint8 BATTERY_MODE_COUNT = 3;
       const uint8 MAX_INSTANCES = 4;
     };
     struct BatteryStatus {
@@ -83,11 +95,19 @@ module px4_msgs {
       float voltage_v;
 
       @verbatim (language="comment", text=
+        "Battery voltage in volts, filtered, 0 if unknown")
+      float voltage_filtered_v;
+
+      @verbatim (language="comment", text=
         "Battery current in amperes, -1 if unknown")
       float current_a;
 
       @verbatim (language="comment", text=
-        "Battery current average in amperes (for FW average in level flight), -1 if unknown")
+        "Battery current in amperes, filtered, 0 if unknown")
+      float current_filtered_a;
+
+      @verbatim (language="comment", text=
+        "Battery current average in amperes, -1 if unknown")
       float current_average_a;
 
       @verbatim (language="comment", text=
@@ -107,7 +127,7 @@ module px4_msgs {
       float time_remaining_s;
 
       @verbatim (language="comment", text=
-        "Temperature of the battery in degrees Celcius, NaN if unknown")
+        "temperature of the battery. NaN if unknown")
       float temperature;
 
       @verbatim (language="comment", text=
@@ -179,8 +199,24 @@ module px4_msgs {
       uint16 faults;
 
       @verbatim (language="comment", text=
+        "Bitmask indicating smart battery internal manufacturer faults, those are not user actionable.")
+      uint32 custom_faults;
+
+      @verbatim (language="comment", text=
         "Current battery warning")
       uint8 warning;
+
+      @verbatim (language="comment", text=
+        "Battery mode. Note, the normal operation mode")
+      uint8 mode;
+
+      @verbatim (language="comment", text=
+        "The average power of the current discharge")
+      float average_power;
+
+      @verbatim (language="comment", text=
+        "The predicted charge or energy remaining in the battery")
+      float available_energy;
 
       @verbatim (language="comment", text=
         "The compensated battery capacity")
@@ -191,45 +227,20 @@ module px4_msgs {
       float remaining_capacity_wh;
 
       @verbatim (language="comment", text=
+        "The design capacity of the battery")
+      float design_capacity;
+
+      @verbatim (language="comment", text=
+        "The predicted remaining time until the battery reaches full charge, in minutes")
+      uint16 average_time_to_full;
+
+      @verbatim (language="comment", text=
         "Number of battery overdischarge")
       uint16 over_discharge_count;
 
       @verbatim (language="comment", text=
         "Nominal voltage of the battery pack")
       float nominal_voltage;
-
-      @verbatim (language="comment", text=
-        "Internal resistance per cell estimate")
-      @unit (value="Ohm")
-      float internal_resistance_estimate;
-
-      @verbatim (language="comment", text=
-        "Open circuit voltage estimate")
-      @unit (value="V")
-      float ocv_estimate;
-
-      @verbatim (language="comment", text=
-        "Filtered open circuit voltage estimate")
-      @unit (value="V")
-      float ocv_estimate_filtered;
-
-      @verbatim (language="comment", text=
-        "[0, 1] Normalized volt based state of charge estimate")
-      float volt_based_soc_estimate;
-
-      @verbatim (language="comment", text=
-        "Predicted voltage")
-      @unit (value="V")
-      float voltage_prediction;
-
-      @verbatim (language="comment", text=
-        "Prediction error")
-      @unit (value="V")
-      float prediction_error;
-
-      @verbatim (language="comment", text=
-        "Norm of the covariance matrix")
-      float estimation_covariance_norm;
     };
   };
 };

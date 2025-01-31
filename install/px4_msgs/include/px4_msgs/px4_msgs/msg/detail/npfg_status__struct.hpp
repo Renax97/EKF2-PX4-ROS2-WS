@@ -53,7 +53,6 @@ struct NpfgStatus_
       this->adapted_period = 0.0f;
       this->p_gain = 0.0f;
       this->time_const = 0.0f;
-      this->can_run_factor = 0.0f;
     }
   }
 
@@ -78,7 +77,6 @@ struct NpfgStatus_
       this->adapted_period = 0.0f;
       this->p_gain = 0.0f;
       this->time_const = 0.0f;
-      this->can_run_factor = 0.0f;
     }
   }
 
@@ -128,9 +126,6 @@ struct NpfgStatus_
   using _time_const_type =
     float;
   _time_const_type time_const;
-  using _can_run_factor_type =
-    float;
-  _can_run_factor_type can_run_factor;
 
   // setters for named parameter idiom
   Type & set__timestamp(
@@ -223,12 +218,6 @@ struct NpfgStatus_
     this->time_const = _arg;
     return *this;
   }
-  Type & set__can_run_factor(
-    const float & _arg)
-  {
-    this->can_run_factor = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -315,9 +304,6 @@ struct NpfgStatus_
       return false;
     }
     if (this->time_const != other.time_const) {
-      return false;
-    }
-    if (this->can_run_factor != other.can_run_factor) {
       return false;
     }
     return true;

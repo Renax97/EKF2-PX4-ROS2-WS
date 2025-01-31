@@ -86,18 +86,12 @@ cdr_serialize(
   cdr << ros_message.az;
   // Member: heading
   cdr << ros_message.heading;
-  // Member: heading_var
-  cdr << ros_message.heading_var;
-  // Member: unaided_heading
-  cdr << ros_message.unaided_heading;
   // Member: delta_heading
   cdr << ros_message.delta_heading;
   // Member: heading_reset_counter
   cdr << ros_message.heading_reset_counter;
   // Member: heading_good_for_control
   cdr << (ros_message.heading_good_for_control ? true : false);
-  // Member: tilt_var
-  cdr << ros_message.tilt_var;
   // Member: xy_global
   cdr << (ros_message.xy_global ? true : false);
   // Member: z_global
@@ -110,16 +104,10 @@ cdr_serialize(
   cdr << ros_message.ref_lon;
   // Member: ref_alt
   cdr << ros_message.ref_alt;
-  // Member: dist_bottom_valid
-  cdr << (ros_message.dist_bottom_valid ? true : false);
   // Member: dist_bottom
   cdr << ros_message.dist_bottom;
-  // Member: dist_bottom_var
-  cdr << ros_message.dist_bottom_var;
-  // Member: delta_dist_bottom
-  cdr << ros_message.delta_dist_bottom;
-  // Member: dist_bottom_reset_counter
-  cdr << ros_message.dist_bottom_reset_counter;
+  // Member: dist_bottom_valid
+  cdr << (ros_message.dist_bottom_valid ? true : false);
   // Member: dist_bottom_sensor_bitfield
   cdr << ros_message.dist_bottom_sensor_bitfield;
   // Member: eph
@@ -244,12 +232,6 @@ cdr_deserialize(
   // Member: heading
   cdr >> ros_message.heading;
 
-  // Member: heading_var
-  cdr >> ros_message.heading_var;
-
-  // Member: unaided_heading
-  cdr >> ros_message.unaided_heading;
-
   // Member: delta_heading
   cdr >> ros_message.delta_heading;
 
@@ -262,9 +244,6 @@ cdr_deserialize(
     cdr >> tmp;
     ros_message.heading_good_for_control = tmp ? true : false;
   }
-
-  // Member: tilt_var
-  cdr >> ros_message.tilt_var;
 
   // Member: xy_global
   {
@@ -292,24 +271,15 @@ cdr_deserialize(
   // Member: ref_alt
   cdr >> ros_message.ref_alt;
 
+  // Member: dist_bottom
+  cdr >> ros_message.dist_bottom;
+
   // Member: dist_bottom_valid
   {
     uint8_t tmp;
     cdr >> tmp;
     ros_message.dist_bottom_valid = tmp ? true : false;
   }
-
-  // Member: dist_bottom
-  cdr >> ros_message.dist_bottom;
-
-  // Member: dist_bottom_var
-  cdr >> ros_message.dist_bottom_var;
-
-  // Member: delta_dist_bottom
-  cdr >> ros_message.delta_dist_bottom;
-
-  // Member: dist_bottom_reset_counter
-  cdr >> ros_message.dist_bottom_reset_counter;
 
   // Member: dist_bottom_sensor_bitfield
   cdr >> ros_message.dist_bottom_sensor_bitfield;
@@ -513,18 +483,6 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: heading_var
-  {
-    size_t item_size = sizeof(ros_message.heading_var);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: unaided_heading
-  {
-    size_t item_size = sizeof(ros_message.unaided_heading);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: delta_heading
   {
     size_t item_size = sizeof(ros_message.delta_heading);
@@ -540,12 +498,6 @@ get_serialized_size(
   // Member: heading_good_for_control
   {
     size_t item_size = sizeof(ros_message.heading_good_for_control);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: tilt_var
-  {
-    size_t item_size = sizeof(ros_message.tilt_var);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -585,33 +537,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: dist_bottom_valid
-  {
-    size_t item_size = sizeof(ros_message.dist_bottom_valid);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: dist_bottom
   {
     size_t item_size = sizeof(ros_message.dist_bottom);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: dist_bottom_var
+  // Member: dist_bottom_valid
   {
-    size_t item_size = sizeof(ros_message.dist_bottom_var);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: delta_dist_bottom
-  {
-    size_t item_size = sizeof(ros_message.delta_dist_bottom);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: dist_bottom_reset_counter
-  {
-    size_t item_size = sizeof(ros_message.dist_bottom_reset_counter);
+    size_t item_size = sizeof(ros_message.dist_bottom_valid);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -916,24 +850,6 @@ max_serialized_size_VehicleLocalPosition(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: heading_var
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: unaided_heading
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
   // Member: delta_heading
   {
     size_t array_size = 1;
@@ -957,15 +873,6 @@ max_serialized_size_VehicleLocalPosition(
 
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: tilt_var
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: xy_global
@@ -1020,14 +927,6 @@ max_serialized_size_VehicleLocalPosition(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: dist_bottom_valid
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
   // Member: dist_bottom
   {
     size_t array_size = 1;
@@ -1037,25 +936,7 @@ max_serialized_size_VehicleLocalPosition(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: dist_bottom_var
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: delta_dist_bottom
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: dist_bottom_reset_counter
+  // Member: dist_bottom_valid
   {
     size_t array_size = 1;
 

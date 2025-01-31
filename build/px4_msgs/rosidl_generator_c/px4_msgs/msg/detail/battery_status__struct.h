@@ -155,7 +155,7 @@ enum
 
 /// Constant 'BATTERY_FAULT_INCOMPATIBLE_VOLTAGE'.
 /**
-  * Vehicle voltage is not compatible with this battery (batteries on same power rail should have similar voltage).
+  * Vehicle voltage is not compatible with battery one
  */
 enum
 {
@@ -189,13 +189,13 @@ enum
   px4_msgs__msg__BatteryStatus__BATTERY_FAULT_HARDWARE_FAILURE = 9
 };
 
-/// Constant 'BATTERY_FAULT_FAILED_TO_ARM'.
+/// Constant 'BATTERY_WARNING_OVER_TEMPERATURE'.
 /**
-  * Battery had a problem while arming
+  * Over-temperature
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_FAILED_TO_ARM = 10
+  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_OVER_TEMPERATURE = 10
 };
 
 /// Constant 'BATTERY_FAULT_COUNT'.
@@ -205,6 +205,42 @@ enum
 enum
 {
   px4_msgs__msg__BatteryStatus__BATTERY_FAULT_COUNT = 11
+};
+
+/// Constant 'BATTERY_MODE_UNKNOWN'.
+/**
+  * Battery does not support a mode, or if it does, is operational
+ */
+enum
+{
+  px4_msgs__msg__BatteryStatus__BATTERY_MODE_UNKNOWN = 0
+};
+
+/// Constant 'BATTERY_MODE_AUTO_DISCHARGING'.
+/**
+  * Battery is auto discharging (towards storage level)
+ */
+enum
+{
+  px4_msgs__msg__BatteryStatus__BATTERY_MODE_AUTO_DISCHARGING = 1
+};
+
+/// Constant 'BATTERY_MODE_HOT_SWAP'.
+/**
+  * Battery in hot-swap mode
+ */
+enum
+{
+  px4_msgs__msg__BatteryStatus__BATTERY_MODE_HOT_SWAP = 2
+};
+
+/// Constant 'BATTERY_MODE_COUNT'.
+/**
+  * Counter - keep it as last element (once we're fully migrated to events interface we can just comment this)!
+ */
+enum
+{
+  px4_msgs__msg__BatteryStatus__BATTERY_MODE_COUNT = 3
 };
 
 /// Constant 'MAX_INSTANCES'.
@@ -222,9 +258,13 @@ typedef struct px4_msgs__msg__BatteryStatus
   bool connected;
   /// Battery voltage in volts, 0 if unknown
   float voltage_v;
+  /// Battery voltage in volts, filtered, 0 if unknown
+  float voltage_filtered_v;
   /// Battery current in amperes, -1 if unknown
   float current_a;
-  /// Battery current average in amperes (for FW average in level flight), -1 if unknown
+  /// Battery current in amperes, filtered, 0 if unknown
+  float current_filtered_a;
+  /// Battery current average in amperes, -1 if unknown
   float current_average_a;
   /// Discharged amount in mAh, -1 if unknown
   float discharged_mah;
@@ -234,7 +274,7 @@ typedef struct px4_msgs__msg__BatteryStatus
   float scale;
   /// predicted time in seconds remaining until battery is empty under previous averaged load, NAN if unknown
   float time_remaining_s;
-  /// Temperature of the battery in degrees Celcius, NaN if unknown
+  /// temperature of the battery. NaN if unknown
   float temperature;
   /// Number of cells, 0 if unknown
   uint8_t cell_count;
@@ -270,30 +310,28 @@ typedef struct px4_msgs__msg__BatteryStatus
   bool is_required;
   /// Smart battery supply status/fault flags (bitmask) for health indication.
   uint16_t faults;
+  /// Bitmask indicating smart battery internal manufacturer faults, those are not user actionable.
+  uint32_t custom_faults;
   /// Current battery warning
   uint8_t warning;
+  /// Battery mode. Note, the normal operation mode
+  uint8_t mode;
+  /// The average power of the current discharge
+  float average_power;
+  /// The predicted charge or energy remaining in the battery
+  float available_energy;
   /// The compensated battery capacity
   float full_charge_capacity_wh;
   /// The compensated battery capacity remaining
   float remaining_capacity_wh;
+  /// The design capacity of the battery
+  float design_capacity;
+  /// The predicted remaining time until the battery reaches full charge, in minutes
+  uint16_t average_time_to_full;
   /// Number of battery overdischarge
   uint16_t over_discharge_count;
   /// Nominal voltage of the battery pack
   float nominal_voltage;
-  /// Internal resistance per cell estimate
-  float internal_resistance_estimate;
-  /// Open circuit voltage estimate
-  float ocv_estimate;
-  /// Filtered open circuit voltage estimate
-  float ocv_estimate_filtered;
-  /// [0, 1] Normalized volt based state of charge estimate
-  float volt_based_soc_estimate;
-  /// Predicted voltage
-  float voltage_prediction;
-  /// Prediction error
-  float prediction_error;
-  /// Norm of the covariance matrix
-  float estimation_covariance_norm;
 } px4_msgs__msg__BatteryStatus;
 
 // Struct for a sequence of px4_msgs__msg__BatteryStatus.

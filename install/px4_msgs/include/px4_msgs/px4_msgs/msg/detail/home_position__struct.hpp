@@ -50,7 +50,6 @@ struct HomePosition_
       this->valid_hpos = false;
       this->valid_lpos = false;
       this->manual_home = false;
-      this->update_count = 0ul;
     }
   }
 
@@ -72,7 +71,6 @@ struct HomePosition_
       this->valid_hpos = false;
       this->valid_lpos = false;
       this->manual_home = false;
-      this->update_count = 0ul;
     }
   }
 
@@ -113,9 +111,6 @@ struct HomePosition_
   using _manual_home_type =
     bool;
   _manual_home_type manual_home;
-  using _update_count_type =
-    uint32_t;
-  _update_count_type update_count;
 
   // setters for named parameter idiom
   Type & set__timestamp(
@@ -188,12 +183,6 @@ struct HomePosition_
     const bool & _arg)
   {
     this->manual_home = _arg;
-    return *this;
-  }
-  Type & set__update_count(
-    const uint32_t & _arg)
-  {
-    this->update_count = _arg;
     return *this;
   }
 
@@ -273,9 +262,6 @@ struct HomePosition_
       return false;
     }
     if (this->manual_home != other.manual_home) {
-      return false;
-    }
-    if (this->update_count != other.update_count) {
       return false;
     }
     return true;

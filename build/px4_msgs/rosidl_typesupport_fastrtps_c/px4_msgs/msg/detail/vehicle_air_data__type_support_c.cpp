@@ -84,11 +84,6 @@ static bool _VehicleAirData__cdr_serialize(
     cdr << ros_message->rho;
   }
 
-  // Field name: eas2tas
-  {
-    cdr << ros_message->eas2tas;
-  }
-
   // Field name: calibration_count
   {
     cdr << ros_message->calibration_count;
@@ -139,11 +134,6 @@ static bool _VehicleAirData__cdr_deserialize(
   // Field name: rho
   {
     cdr >> ros_message->rho;
-  }
-
-  // Field name: eas2tas
-  {
-    cdr >> ros_message->eas2tas;
   }
 
   // Field name: calibration_count
@@ -207,12 +197,6 @@ size_t get_serialized_size_px4_msgs__msg__VehicleAirData(
   // field.name rho
   {
     size_t item_size = sizeof(ros_message->rho);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name eas2tas
-  {
-    size_t item_size = sizeof(ros_message->eas2tas);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -300,14 +284,6 @@ size_t max_serialized_size_px4_msgs__msg__VehicleAirData(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: rho
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: eas2tas
   {
     size_t array_size = 1;
 

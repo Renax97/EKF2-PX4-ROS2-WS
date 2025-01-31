@@ -42,23 +42,17 @@ px4_msgs__msg__VehicleLocalPosition__init(px4_msgs__msg__VehicleLocalPosition * 
   // ay
   // az
   // heading
-  // heading_var
-  // unaided_heading
   // delta_heading
   // heading_reset_counter
   // heading_good_for_control
-  // tilt_var
   // xy_global
   // z_global
   // ref_timestamp
   // ref_lat
   // ref_lon
   // ref_alt
-  // dist_bottom_valid
   // dist_bottom
-  // dist_bottom_var
-  // delta_dist_bottom
-  // dist_bottom_reset_counter
+  // dist_bottom_valid
   // dist_bottom_sensor_bitfield
   // eph
   // epv
@@ -103,23 +97,17 @@ px4_msgs__msg__VehicleLocalPosition__fini(px4_msgs__msg__VehicleLocalPosition * 
   // ay
   // az
   // heading
-  // heading_var
-  // unaided_heading
   // delta_heading
   // heading_reset_counter
   // heading_good_for_control
-  // tilt_var
   // xy_global
   // z_global
   // ref_timestamp
   // ref_lat
   // ref_lon
   // ref_alt
-  // dist_bottom_valid
   // dist_bottom
-  // dist_bottom_var
-  // delta_dist_bottom
-  // dist_bottom_reset_counter
+  // dist_bottom_valid
   // dist_bottom_sensor_bitfield
   // eph
   // epv
@@ -242,14 +230,6 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   if (lhs->heading != rhs->heading) {
     return false;
   }
-  // heading_var
-  if (lhs->heading_var != rhs->heading_var) {
-    return false;
-  }
-  // unaided_heading
-  if (lhs->unaided_heading != rhs->unaided_heading) {
-    return false;
-  }
   // delta_heading
   if (lhs->delta_heading != rhs->delta_heading) {
     return false;
@@ -260,10 +240,6 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   }
   // heading_good_for_control
   if (lhs->heading_good_for_control != rhs->heading_good_for_control) {
-    return false;
-  }
-  // tilt_var
-  if (lhs->tilt_var != rhs->tilt_var) {
     return false;
   }
   // xy_global
@@ -290,24 +266,12 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   if (lhs->ref_alt != rhs->ref_alt) {
     return false;
   }
-  // dist_bottom_valid
-  if (lhs->dist_bottom_valid != rhs->dist_bottom_valid) {
-    return false;
-  }
   // dist_bottom
   if (lhs->dist_bottom != rhs->dist_bottom) {
     return false;
   }
-  // dist_bottom_var
-  if (lhs->dist_bottom_var != rhs->dist_bottom_var) {
-    return false;
-  }
-  // delta_dist_bottom
-  if (lhs->delta_dist_bottom != rhs->delta_dist_bottom) {
-    return false;
-  }
-  // dist_bottom_reset_counter
-  if (lhs->dist_bottom_reset_counter != rhs->dist_bottom_reset_counter) {
+  // dist_bottom_valid
+  if (lhs->dist_bottom_valid != rhs->dist_bottom_valid) {
     return false;
   }
   // dist_bottom_sensor_bitfield
@@ -415,18 +379,12 @@ px4_msgs__msg__VehicleLocalPosition__copy(
   output->az = input->az;
   // heading
   output->heading = input->heading;
-  // heading_var
-  output->heading_var = input->heading_var;
-  // unaided_heading
-  output->unaided_heading = input->unaided_heading;
   // delta_heading
   output->delta_heading = input->delta_heading;
   // heading_reset_counter
   output->heading_reset_counter = input->heading_reset_counter;
   // heading_good_for_control
   output->heading_good_for_control = input->heading_good_for_control;
-  // tilt_var
-  output->tilt_var = input->tilt_var;
   // xy_global
   output->xy_global = input->xy_global;
   // z_global
@@ -439,16 +397,10 @@ px4_msgs__msg__VehicleLocalPosition__copy(
   output->ref_lon = input->ref_lon;
   // ref_alt
   output->ref_alt = input->ref_alt;
-  // dist_bottom_valid
-  output->dist_bottom_valid = input->dist_bottom_valid;
   // dist_bottom
   output->dist_bottom = input->dist_bottom;
-  // dist_bottom_var
-  output->dist_bottom_var = input->dist_bottom_var;
-  // delta_dist_bottom
-  output->delta_dist_bottom = input->delta_dist_bottom;
-  // dist_bottom_reset_counter
-  output->dist_bottom_reset_counter = input->dist_bottom_reset_counter;
+  // dist_bottom_valid
+  output->dist_bottom_valid = input->dist_bottom_valid;
   // dist_bottom_sensor_bitfield
   output->dist_bottom_sensor_bitfield = input->dist_bottom_sensor_bitfield;
   // eph

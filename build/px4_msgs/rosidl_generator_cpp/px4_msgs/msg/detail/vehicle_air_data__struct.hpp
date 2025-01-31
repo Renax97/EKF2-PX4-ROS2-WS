@@ -45,7 +45,6 @@ struct VehicleAirData_
       this->baro_temp_celcius = 0.0f;
       this->baro_pressure_pa = 0.0f;
       this->rho = 0.0f;
-      this->eas2tas = 0.0f;
       this->calibration_count = 0;
     }
   }
@@ -63,7 +62,6 @@ struct VehicleAirData_
       this->baro_temp_celcius = 0.0f;
       this->baro_pressure_pa = 0.0f;
       this->rho = 0.0f;
-      this->eas2tas = 0.0f;
       this->calibration_count = 0;
     }
   }
@@ -90,9 +88,6 @@ struct VehicleAirData_
   using _rho_type =
     float;
   _rho_type rho;
-  using _eas2tas_type =
-    float;
-  _eas2tas_type eas2tas;
   using _calibration_count_type =
     uint8_t;
   _calibration_count_type calibration_count;
@@ -138,12 +133,6 @@ struct VehicleAirData_
     const float & _arg)
   {
     this->rho = _arg;
-    return *this;
-  }
-  Type & set__eas2tas(
-    const float & _arg)
-  {
-    this->eas2tas = _arg;
     return *this;
   }
   Type & set__calibration_count(
@@ -214,9 +203,6 @@ struct VehicleAirData_
       return false;
     }
     if (this->rho != other.rho) {
-      return false;
-    }
-    if (this->eas2tas != other.eas2tas) {
       return false;
     }
     if (this->calibration_count != other.calibration_count) {

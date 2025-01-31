@@ -50,12 +50,6 @@ cdr_serialize(
   cdr << ros_message.nav_state_user_intention;
   // Member: nav_state
   cdr << ros_message.nav_state;
-  // Member: executor_in_charge
-  cdr << ros_message.executor_in_charge;
-  // Member: valid_nav_states_mask
-  cdr << ros_message.valid_nav_states_mask;
-  // Member: can_set_nav_states_mask
-  cdr << ros_message.can_set_nav_states_mask;
   // Member: failure_detector_status
   cdr << ros_message.failure_detector_status;
   // Member: hil_state
@@ -66,8 +60,6 @@ cdr_serialize(
   cdr << (ros_message.failsafe ? true : false);
   // Member: failsafe_and_user_took_over
   cdr << (ros_message.failsafe_and_user_took_over ? true : false);
-  // Member: failsafe_defer_state
-  cdr << ros_message.failsafe_defer_state;
   // Member: gcs_connection_lost
   cdr << (ros_message.gcs_connection_lost ? true : false);
   // Member: gcs_connection_lost_counter
@@ -150,15 +142,6 @@ cdr_deserialize(
   // Member: nav_state
   cdr >> ros_message.nav_state;
 
-  // Member: executor_in_charge
-  cdr >> ros_message.executor_in_charge;
-
-  // Member: valid_nav_states_mask
-  cdr >> ros_message.valid_nav_states_mask;
-
-  // Member: can_set_nav_states_mask
-  cdr >> ros_message.can_set_nav_states_mask;
-
   // Member: failure_detector_status
   cdr >> ros_message.failure_detector_status;
 
@@ -181,9 +164,6 @@ cdr_deserialize(
     cdr >> tmp;
     ros_message.failsafe_and_user_took_over = tmp ? true : false;
   }
-
-  // Member: failsafe_defer_state
-  cdr >> ros_message.failsafe_defer_state;
 
   // Member: gcs_connection_lost
   {
@@ -400,24 +380,6 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: executor_in_charge
-  {
-    size_t item_size = sizeof(ros_message.executor_in_charge);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: valid_nav_states_mask
-  {
-    size_t item_size = sizeof(ros_message.valid_nav_states_mask);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: can_set_nav_states_mask
-  {
-    size_t item_size = sizeof(ros_message.can_set_nav_states_mask);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: failure_detector_status
   {
     size_t item_size = sizeof(ros_message.failure_detector_status);
@@ -445,12 +407,6 @@ get_serialized_size(
   // Member: failsafe_and_user_took_over
   {
     size_t item_size = sizeof(ros_message.failsafe_and_user_took_over);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: failsafe_defer_state
-  {
-    size_t item_size = sizeof(ros_message.failsafe_defer_state);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -692,32 +648,6 @@ max_serialized_size_VehicleStatus(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: executor_in_charge
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: valid_nav_states_mask
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: can_set_nav_states_mask
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
   // Member: failure_detector_status
   {
     size_t array_size = 1;
@@ -752,14 +682,6 @@ max_serialized_size_VehicleStatus(
   }
 
   // Member: failsafe_and_user_took_over
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: failsafe_defer_state
   {
     size_t array_size = 1;
 
