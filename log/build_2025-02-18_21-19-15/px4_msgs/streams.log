@@ -1,0 +1,23 @@
+[0.025s] Invoking command in '/home/renato/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_msgs -- -j20 -l20
+[0.690s] [  0%] Built target ament_cmake_python_symlink_px4_msgs
+[0.711s] [  0%] Built target px4_msgs__cpp
+[0.765s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[0.861s] [ 25%] Built target px4_msgs__rosidl_typesupport_c
+[0.876s] [ 37%] Built target px4_msgs__rosidl_typesupport_cpp
+[0.883s] [ 50%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[0.896s] [ 62%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[0.908s] [ 75%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[0.941s] [ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[0.974s] [ 88%] Built target px4_msgs
+[1.017s] [ 88%] Built target px4_msgs__py
+[1.157s] [100%] Built target px4_msgs__rosidl_generator_py
+[1.198s] [100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.199s] [100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext
+[1.200s] [100%] Built target px4_msgs__rosidl_typesupport_c__pyext
+[1.229s] running egg_info
+[1.251s] writing px4_msgs.egg-info/PKG-INFO
+[1.251s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[1.251s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[1.315s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[1.319s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[1.380s] [100%] Built target ament_cmake_python_build_px4_msgs_egg

@@ -1,4 +1,0 @@
-[ 12%] [32m[1mLinking CXX executable sensor_driver_gz_node[0m
-[ 37%] Built target sensor_driver_flamingo_node
-[ 62%] Built target sensor_driver_bias_computation_node
-[ 87%] Built target sensor_driver_node

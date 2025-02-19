@@ -1,0 +1,2 @@
+Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/renato/ws_sensor_combined/src/end_effector_pkg -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/end_effector_pkg
+Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/renato/ws_sensor_combined/src/end_effector_pkg -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/end_effector_pkg

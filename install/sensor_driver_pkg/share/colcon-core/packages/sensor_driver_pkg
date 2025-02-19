@@ -1,1 +1,1 @@
-geometry_msgs:px4_msgs:rclcpp
+geometry_msgs:px4_msgs:rclcpp:ros_gz_interfaces

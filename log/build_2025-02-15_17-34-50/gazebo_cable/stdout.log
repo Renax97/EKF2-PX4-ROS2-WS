@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target cable_vel_control_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libcable_vel_control_plugin.so[0m
+[100%] Built target cable_vel_control_plugin
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/library_path.sh
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/library_path.dsv
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/lib/gz/libcable_vel_control_plugin.so
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/lib/gazebo_cable/cable_controller_test_square.py
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/launch/cable_sim_launch.py
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/launch/cable_standalone.launch
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/urdf/cable.sdf
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/urdf/cable_model.urdf.xacro
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.xml
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/package_run_dependencies/gazebo_cable
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/parent_prefix_path/gazebo_cable
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/ament_prefix_path.sh
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/ament_prefix_path.dsv
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/path.sh
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/path.dsv
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.bash
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.sh
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.zsh
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.dsv
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.dsv
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/packages/gazebo_cable
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/gazebo_cableConfig.cmake
+-- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/gazebo_cableConfig-version.cmake
+-- Up-to-date symlink: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.xml

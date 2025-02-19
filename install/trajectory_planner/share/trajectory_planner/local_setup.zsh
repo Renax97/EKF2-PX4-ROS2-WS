@@ -1,0 +1,1 @@
+/home/renato/ws_sensor_combined/build/trajectory_planner/ament_cmake_environment_hooks/local_setup.zsh

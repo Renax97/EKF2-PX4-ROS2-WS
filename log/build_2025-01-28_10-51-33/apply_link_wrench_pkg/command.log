@@ -1,2 +1,0 @@
-Invoking command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20
-Invoked command in '/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/apply_link_wrench_pkg -- -j20 -l20

@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target cable_vel_control_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o[0m
+[01m[K/home/renato/ws_sensor_combined/src/gazebo_cable/src/cable_vel_control_plugin.cpp:79:54:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+   79 | GZ_ADD_PLUGIN(CableVelControlPlugin, gz::sim::System)
+      |                                                      [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/cable_vel_control_plugin.dir/build.make:76: CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o] Errore 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cable_vel_control_plugin.dir/all] Errore 2
+gmake: *** [Makefile:146: all] Errore 2

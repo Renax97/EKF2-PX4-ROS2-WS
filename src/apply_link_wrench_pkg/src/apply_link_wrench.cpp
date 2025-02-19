@@ -179,7 +179,7 @@ int main(int argc, char **argv)
 
 // APPLICAZIONE FORZA CON RAMPA CRESCENTE E DECRESCENTE
 
-
+/*
 #include <rclcpp/rclcpp.hpp>
 #include <ros_gz_interfaces/msg/entity_wrench.hpp>
 #include <chrono>
@@ -207,7 +207,7 @@ public:
     publish_timer_ = this->create_wall_timer(4ms, std::bind(&ForcePublisherNode::publish_ramp_force, this));
 
     // Parametri configurabili
-    total_duration_ = 0.4;   // Durata totale del ciclo (secondi)
+    total_duration_ = 0.1;   // Durata totale del ciclo (secondi)
     max_force_z_ = -10.0;    // Forza massima lungo Z
   }
 
@@ -258,8 +258,8 @@ private:
       msg.header.stamp.sec = now.seconds();
       msg.header.stamp.nanosec = now.nanoseconds() - (msg.header.stamp.sec * 1'000'000'000);
       msg.entity.id = 66;  // ID dell'entità
-      msg.wrench.force.x = 0.0;
-      msg.wrench.force.y = 0.0;
+      msg.wrench.force.x = -1.0;
+      msg.wrench.force.y = -2.0;
       msg.wrench.force.z = force_z;
       msg.wrench.torque.x = 0.0;
       msg.wrench.torque.y = 0.0;
@@ -297,11 +297,14 @@ int main(int argc, char **argv)
   rclcpp::shutdown();
   return 0;
 }
-
+*/
 
 
 //APPLICAZIONE FORZA COSTANTE 
-/*
+
+
+
+
 #include <rclcpp/rclcpp.hpp>
 #include <ros_gz_interfaces/msg/entity_wrench.hpp>
 #include <chrono>
@@ -329,8 +332,8 @@ public:
     publish_timer_ = this->create_wall_timer(4ms, std::bind(&ForcePublisherNode::publish_constant_force, this));
 
     // Parametri configurabili
-    duration_ = 0.001;       // Durata dell'applicazione della forza (secondi)
-    constant_force_z_ = -10.0; // Forza costante lungo Z
+    duration_ = 0.4;       // Durata dell'applicazione della forza (secondi)
+    constant_force_z_ = -9.5; // Forza costante lungo Z
   }
 
 private:
@@ -354,7 +357,8 @@ private:
         auto msg = ros_gz_interfaces::msg::EntityWrench();
         msg.header.stamp.sec = now.seconds();
         msg.header.stamp.nanosec = now.nanoseconds() - (msg.header.stamp.sec * 1'000'000'000);
-        msg.entity.id = 66; // ID dell'entità
+        msg.entity.id = 74; // ID dell'entità
+        //ID VECCHIO 484
         msg.wrench.force.x = 0.0;
         msg.wrench.force.y = 0.0;
         msg.wrench.force.z = constant_force_z_;
@@ -400,11 +404,102 @@ int main(int argc, char **argv)
   rclcpp::shutdown();
   return 0;
 }
+
+
+
+
+
+/*
+#include <rclcpp/rclcpp.hpp>
+#include <ros_gz_interfaces/msg/entity_wrench.hpp>
+#include <px4_msgs/msg/vehicle_odometry.hpp>
+#include <chrono>
+
+using namespace std::chrono_literals;
+
+class ForcePublisherNode : public rclcpp::Node
+{
+public:
+  ForcePublisherNode()
+      : Node("force_publisher_node"), force_applied_(false)
+  {
+    // Dichiarazione parametro 'use_sim_time'
+    if (!this->has_parameter("use_sim_time")) {
+      this->declare_parameter("use_sim_time", true);
+    }
+
+    // Publisher per il topic /world/default/wrench
+    publisher_ = this->create_publisher<ros_gz_interfaces::msg::EntityWrench>("/world/default/wrench", 10);
+
+    // Subscriber per la posizione del drone
+    subscription_ = this->create_subscription<px4_msgs::msg::VehicleOdometry>(
+        "/fmu/out/vehicle_odometry", rclcpp::SensorDataQoS(),
+        std::bind(&ForcePublisherNode::odometry_callback, this, std::placeholders::_1));
+
+    // Parametri configurabili
+    total_duration_ = 0.4; // Durata totale della forza
+    max_force_z_ = 3.0;  // Forza massima lungo Z
+  }
+
+private:
+  // Callback per leggere la posizione Z dal topic /fmu/out/vehicle_odometry
+  void odometry_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg)
+  {
+    if (force_applied_) return; // Se la forza è già stata applicata, ignora i messaggi
+
+    double position_z = msg->position[2];
+
+    if (position_z <= -1.8)  // Attiva solo alla prima lettura di z == -1
+    {
+      force_applied_ = true; // Blocca future applicazioni
+      RCLCPP_INFO(this->get_logger(), "Inizio applicazione forza (position.z = -1).");
+      apply_force_once();
+    }
+  }
+
+  // Applica la forza una sola volta
+  void apply_force_once()
+  {
+    auto now = this->now();
+    auto msg = ros_gz_interfaces::msg::EntityWrench();
+    
+    msg.header.stamp.sec = now.seconds();
+    msg.header.stamp.nanosec = now.nanoseconds() - (msg.header.stamp.sec * 1'000'000'000);
+    msg.entity.id = 74; // ID dell'entità
+    
+    msg.wrench.force.x = 0.1;
+    msg.wrench.force.y = 0.05;
+    msg.wrench.force.z = max_force_z_; // Applica la forza massima subito
+    msg.wrench.torque.x = 0.0;
+    msg.wrench.torque.y = 0.0;
+    msg.wrench.torque.z = 0.0;
+
+    publisher_->publish(msg);
+    RCLCPP_INFO(this->get_logger(), "Forza applicata: Fz=%.2f", msg.wrench.force.z);
+  }
+
+  // Publisher per la forza
+  rclcpp::Publisher<ros_gz_interfaces::msg::EntityWrench>::SharedPtr publisher_;
+
+  // Subscriber per la posizione del drone
+  rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr subscription_;
+
+  // Variabili di stato
+  bool force_applied_;  // Indica se la forza è già stata applicata
+
+  // Parametri configurabili
+  double total_duration_; // Durata totale dell'applicazione (secondi)
+  double max_force_z_;    // Forza massima lungo Z
+};
+
+int main(int argc, char **argv)
+{
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<ForcePublisherNode>());
+  rclcpp::shutdown();
+  return 0;
+}
+
 */
-
-
-
-
-
 
 

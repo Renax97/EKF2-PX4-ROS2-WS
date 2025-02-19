@@ -1,0 +1,1 @@
+/home/renato/ws_sensor_combined/src/gazebo_cable/src/cable_controller_test_square.py

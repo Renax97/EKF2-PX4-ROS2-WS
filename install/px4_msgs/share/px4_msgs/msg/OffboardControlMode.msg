@@ -1,10 +1,1 @@
-# Off-board control mode
-
-uint64 timestamp		# time since system start (microseconds)
-
-bool position
-bool velocity
-bool acceleration
-bool attitude
-bool body_rate
-bool actuator
+/home/renato/ws_sensor_combined/src/px4_msgs/msg/OffboardControlMode.msg

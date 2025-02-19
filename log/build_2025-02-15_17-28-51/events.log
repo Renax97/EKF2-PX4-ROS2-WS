@@ -1,0 +1,257 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (gazebo_cable) JobQueued: {'identifier': 'gazebo_cable', 'dependencies': OrderedDict()}
+[0.000220] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000243] (apply_link_wrench_pkg) JobQueued: {'identifier': 'apply_link_wrench_pkg', 'dependencies': OrderedDict([('px4_msgs', '/home/renato/ws_sensor_combined/install/px4_msgs')])}
+[0.000271] (dual_wrench_publisher_pkg) JobQueued: {'identifier': 'dual_wrench_publisher_pkg', 'dependencies': OrderedDict([('px4_msgs', '/home/renato/ws_sensor_combined/install/px4_msgs')])}
+[0.000292] (load_cell_publisher_pkg) JobQueued: {'identifier': 'load_cell_publisher_pkg', 'dependencies': OrderedDict([('px4_msgs', '/home/renato/ws_sensor_combined/install/px4_msgs')])}
+[0.000312] (sensor_driver_pkg) JobQueued: {'identifier': 'sensor_driver_pkg', 'dependencies': OrderedDict([('px4_msgs', '/home/renato/ws_sensor_combined/install/px4_msgs')])}
+[0.000330] (trajectory_planner) JobQueued: {'identifier': 'trajectory_planner', 'dependencies': OrderedDict([('px4_msgs', '/home/renato/ws_sensor_combined/install/px4_msgs')])}
+[0.000349] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.004392] (gazebo_cable) JobStarted: {'identifier': 'gazebo_cable'}
+[0.007591] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.007927] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.008536] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/renato/ws_sensor_combined/build/px4_msgs', '--', '-j20', '-l20'], 'cwd': '/home/renato/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/renato/PX4-Autopilot/Tools/simulation/gz/models'), ('LANGUAGE', 'it:en'), ('USER', 'renato'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner/lib:/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/renato'), ('OLDPWD', '/home/renato'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '2239'), ('SYSTEMD_EXEC_PID', '2601'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6823'), ('COLCON_PREFIX_PATH', '/home/renato/bridge_ws/install:/home/renato/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'renato'), ('JOURNAL_STREAM', '8:2672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'renato'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/renato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/renato-LOQ:@/tmp/.ICE-unix/2574,unix/renato-LOQ:/tmp/.ICE-unix/2574'), ('INVOCATION_ID', '6237ae280fed411bb57441ad3549b976'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '71'), ('AMENT_PREFIX_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:540a808c-b26e-4270-b71e-359e377b66a8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/renato/bridge_ws/install/ros_gz_sim_demos/share'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GZ_VERSION', 'garden'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/renato/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/renato/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/renato/bridge_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/renato/bridge_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.011686] (gazebo_cable) JobProgress: {'identifier': 'gazebo_cable', 'progress': 'cmake'}
+[0.011874] (gazebo_cable) JobProgress: {'identifier': 'gazebo_cable', 'progress': 'build'}
+[0.012148] (gazebo_cable) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/renato/ws_sensor_combined/build/gazebo_cable', '--', '-j20', '-l20'], 'cwd': '/home/renato/ws_sensor_combined/build/gazebo_cable', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/renato/PX4-Autopilot/Tools/simulation/gz/models'), ('LANGUAGE', 'it:en'), ('USER', 'renato'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner/lib:/home/renato/ws_sensor_combined/install/px4_msgs/lib:/home/renato/bridge_ws/install/ros_ign_interfaces/lib:/home/renato/bridge_ws/install/ros_gz_sim/lib:/home/renato/bridge_ws/install/ros_gz_bridge/lib:/home/renato/bridge_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/renato'), ('OLDPWD', '/home/renato'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '2239'), ('SYSTEMD_EXEC_PID', '2601'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6823'), ('COLCON_PREFIX_PATH', '/home/renato/bridge_ws/install:/home/renato/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'renato'), ('JOURNAL_STREAM', '8:2672'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'renato'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/renato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/renato-LOQ:@/tmp/.ICE-unix/2574,unix/renato-LOQ:/tmp/.ICE-unix/2574'), ('INVOCATION_ID', '6237ae280fed411bb57441ad3549b976'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '71'), ('AMENT_PREFIX_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:540a808c-b26e-4270-b71e-359e377b66a8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/renato/bridge_ws/install/ros_gz_sim_demos/share'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GZ_VERSION', 'garden'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/renato/ws_sensor_combined/build/gazebo_cable'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/renato/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/renato/bridge_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/renato/bridge_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/renato/ws_sensor_combined/install/trajectory_planner:/home/renato/ws_sensor_combined/install/sensor_driver_pkg:/home/renato/ws_sensor_combined/install/load_cell_publisher_pkg:/home/renato/ws_sensor_combined/install/dual_wrench_publisher_pkg:/home/renato/ws_sensor_combined/install/apply_link_wrench_pkg:/home/renato/ws_sensor_combined/install/px4_msgs:/home/renato/bridge_ws/install/test_ros_gz_bridge:/home/renato/bridge_ws/install/ros_ign_interfaces:/home/renato/bridge_ws/install/ros_ign:/home/renato/bridge_ws/install/ros_ign_image:/home/renato/bridge_ws/install/ros_ign_gazebo_demos:/home/renato/bridge_ws/install/ros_ign_gazebo:/home/renato/bridge_ws/install/ros_ign_bridge:/home/renato/bridge_ws/install/ros_gz:/home/renato/bridge_ws/install/ros_gz_sim_demos:/home/renato/bridge_ws/install/ros_gz_sim:/home/renato/bridge_ws/install/ros_gz_image:/home/renato/bridge_ws/install/ros_gz_bridge:/home/renato/bridge_ws/install/ros_gz_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.045101] (gazebo_cable) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cable_vel_control_plugin\x1b[0m\n'}
+[0.057243] (gazebo_cable) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o\x1b[0m\n'}
+[0.099582] (-) TimerEvent: {}
+[0.199872] (-) TimerEvent: {}
+[0.261981] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.269053] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_px4_msgs\n'}
+[0.277908] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.299986] (-) TimerEvent: {}
+[0.400345] (-) TimerEvent: {}
+[0.487113] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.495650] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[0.495819] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[0.495994] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[0.500537] (-) TimerEvent: {}
+[0.520309] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[0.520584] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[0.549867] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[0.600721] (-) TimerEvent: {}
+[0.701088] (-) TimerEvent: {}
+[0.801454] (-) TimerEvent: {}
+[0.901858] (-) TimerEvent: {}
+[1.000553] (gazebo_cable) StderrLine: {'line': b'\x1b[01m\x1b[K/home/renato/ws_sensor_combined/src/gazebo_cable/src/cable_vel_control_plugin.cpp:79:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion at end of input\n'}
+[1.000769] (gazebo_cable) StderrLine: {'line': b'   79 | GZ_ADD_PLUGIN(CableVelControlPlugin, gz::sim::System)\n'}
+[1.000843] (gazebo_cable) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.001949] (-) TimerEvent: {}
+[1.102324] (-) TimerEvent: {}
+[1.202726] (-) TimerEvent: {}
+[1.303033] (-) TimerEvent: {}
+[1.386519] (gazebo_cable) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cable_vel_control_plugin.dir/build.make:76: CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o] Errore 1\n'}
+[1.386840] (gazebo_cable) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cable_vel_control_plugin.dir/all] Errore 2\n'}
+[1.387196] (gazebo_cable) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Errore 2\n'}
+[1.389189] (gazebo_cable) CommandEnded: {'returncode': 2}
+[1.397535] (gazebo_cable) JobEnded: {'identifier': 'gazebo_cable', 'rc': 2}
+[1.403122] (-) TimerEvent: {}
+[1.503309] (-) TimerEvent: {}
+[1.603646] (-) TimerEvent: {}
+[1.703882] (-) TimerEvent: {}
+[1.804133] (-) TimerEvent: {}
+[1.904445] (-) TimerEvent: {}
+[2.004712] (-) TimerEvent: {}
+[2.104942] (-) TimerEvent: {}
+[2.205202] (-) TimerEvent: {}
+[2.305520] (-) TimerEvent: {}
+[2.405754] (-) TimerEvent: {}
+[2.506069] (-) TimerEvent: {}
+[2.606388] (-) TimerEvent: {}
+[2.706733] (-) TimerEvent: {}
+[2.807070] (-) TimerEvent: {}
+[2.907423] (-) TimerEvent: {}
+[3.007747] (-) TimerEvent: {}
+[3.108001] (-) TimerEvent: {}
+[3.208332] (-) TimerEvent: {}
+[3.308563] (-) TimerEvent: {}
+[3.408793] (-) TimerEvent: {}
+[3.509054] (-) TimerEvent: {}
+[3.609378] (-) TimerEvent: {}
+[3.709708] (-) TimerEvent: {}
+[3.809936] (-) TimerEvent: {}
+[3.910283] (-) TimerEvent: {}
+[4.010607] (-) TimerEvent: {}
+[4.110931] (-) TimerEvent: {}
+[4.211189] (-) TimerEvent: {}
+[4.311489] (-) TimerEvent: {}
+[4.411843] (-) TimerEvent: {}
+[4.512098] (-) TimerEvent: {}
+[4.612357] (-) TimerEvent: {}
+[4.712682] (-) TimerEvent: {}
+[4.813028] (-) TimerEvent: {}
+[4.913339] (-) TimerEvent: {}
+[5.013662] (-) TimerEvent: {}
+[5.113893] (-) TimerEvent: {}
+[5.214209] (-) TimerEvent: {}
+[5.314496] (-) TimerEvent: {}
+[5.414722] (-) TimerEvent: {}
+[5.514944] (-) TimerEvent: {}
+[5.615273] (-) TimerEvent: {}
+[5.715599] (-) TimerEvent: {}
+[5.815913] (-) TimerEvent: {}
+[5.916225] (-) TimerEvent: {}
+[6.016545] (-) TimerEvent: {}
+[6.116882] (-) TimerEvent: {}
+[6.217205] (-) TimerEvent: {}
+[6.325850] (-) TimerEvent: {}
+[6.426105] (-) TimerEvent: {}
+[6.526441] (-) TimerEvent: {}
+[6.626730] (-) TimerEvent: {}
+[6.726978] (-) TimerEvent: {}
+[6.827203] (-) TimerEvent: {}
+[6.927429] (-) TimerEvent: {}
+[7.027663] (-) TimerEvent: {}
+[7.127915] (-) TimerEvent: {}
+[7.228167] (-) TimerEvent: {}
+[7.328393] (-) TimerEvent: {}
+[7.428633] (-) TimerEvent: {}
+[7.528889] (-) TimerEvent: {}
+[7.629127] (-) TimerEvent: {}
+[7.729351] (-) TimerEvent: {}
+[7.829596] (-) TimerEvent: {}
+[7.929849] (-) TimerEvent: {}
+[8.030107] (-) TimerEvent: {}
+[8.130423] (-) TimerEvent: {}
+[8.230678] (-) TimerEvent: {}
+[8.330890] (-) TimerEvent: {}
+[8.431120] (-) TimerEvent: {}
+[8.531333] (-) TimerEvent: {}
+[8.631585] (-) TimerEvent: {}
+[8.731793] (-) TimerEvent: {}
+[8.832047] (-) TimerEvent: {}
+[8.932276] (-) TimerEvent: {}
+[9.032507] (-) TimerEvent: {}
+[9.132733] (-) TimerEvent: {}
+[9.232940] (-) TimerEvent: {}
+[9.333178] (-) TimerEvent: {}
+[9.433466] (-) TimerEvent: {}
+[9.533690] (-) TimerEvent: {}
+[9.633918] (-) TimerEvent: {}
+[9.734208] (-) TimerEvent: {}
+[9.834429] (-) TimerEvent: {}
+[9.934681] (-) TimerEvent: {}
+[10.034884] (-) TimerEvent: {}
+[10.135122] (-) TimerEvent: {}
+[10.235424] (-) TimerEvent: {}
+[10.335594] (-) TimerEvent: {}
+[10.435797] (-) TimerEvent: {}
+[10.536029] (-) TimerEvent: {}
+[10.636310] (-) TimerEvent: {}
+[10.736637] (-) TimerEvent: {}
+[10.836844] (-) TimerEvent: {}
+[10.937079] (-) TimerEvent: {}
+[11.037398] (-) TimerEvent: {}
+[11.137677] (-) TimerEvent: {}
+[11.237881] (-) TimerEvent: {}
+[11.338109] (-) TimerEvent: {}
+[11.438391] (-) TimerEvent: {}
+[11.538682] (-) TimerEvent: {}
+[11.638879] (-) TimerEvent: {}
+[11.739155] (-) TimerEvent: {}
+[11.839465] (-) TimerEvent: {}
+[11.939707] (-) TimerEvent: {}
+[12.039913] (-) TimerEvent: {}
+[12.140206] (-) TimerEvent: {}
+[12.240490] (-) TimerEvent: {}
+[12.340786] (-) TimerEvent: {}
+[12.441022] (-) TimerEvent: {}
+[12.541340] (-) TimerEvent: {}
+[12.641635] (-) TimerEvent: {}
+[12.741837] (-) TimerEvent: {}
+[12.842073] (-) TimerEvent: {}
+[12.942367] (-) TimerEvent: {}
+[13.042609] (-) TimerEvent: {}
+[13.142824] (-) TimerEvent: {}
+[13.243067] (-) TimerEvent: {}
+[13.343380] (-) TimerEvent: {}
+[13.443687] (-) TimerEvent: {}
+[13.543901] (-) TimerEvent: {}
+[13.644145] (-) TimerEvent: {}
+[13.744433] (-) TimerEvent: {}
+[13.844689] (-) TimerEvent: {}
+[13.945099] (-) TimerEvent: {}
+[14.045333] (-) TimerEvent: {}
+[14.145668] (-) TimerEvent: {}
+[14.245878] (-) TimerEvent: {}
+[14.346113] (-) TimerEvent: {}
+[14.446408] (-) TimerEvent: {}
+[14.546677] (-) TimerEvent: {}
+[14.646894] (-) TimerEvent: {}
+[14.747132] (-) TimerEvent: {}
+[14.847419] (-) TimerEvent: {}
+[14.906920] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[14.907044] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[14.907084] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in <module>\n'}
+[14.907117] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>\n'}
+[14.907207] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[14.907235] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[14.907263] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main\n'}
+[14.907292] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main\n'}
+[14.907319] (px4_msgs) StderrLine: {'line': b'    generate_c(args.generator_arguments_file)\n'}
+[14.907346] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 37, in generate_c\n'}
+[14.907372] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[14.907397] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp\n'}
+[14.907422] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[14.907447] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files\n'}
+[14.907473] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[14.907497] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[14.907522] (px4_msgs) StderrLine: {'line': b'    expand_template(\n'}
+[14.907546] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template\n'}
+[14.907576] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[14.907600] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[14.907624] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** Eliminazione del file \xc2\xabrosidl_generator_cpp/px4_msgs/msg/action_request.hpp\xc2\xbb\n'}
+[14.907649] (px4_msgs) StderrLine: {'line': b'    interpreter.string(template_content, template_path, locals=data)\n'}
+[14.907674] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string\n'}
+[14.907699] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[14.907723] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[14.907747] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** Eliminazione del file \xc2\xabrosidl_generator_c/px4_msgs/msg/action_request.h\xc2\xbb\n'}
+[14.907773] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[14.907800] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[14.907827] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[14.907854] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[14.907881] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[14.907906] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[14.907931] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[14.907957] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[14.907981] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[14.908006] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[14.908031] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[14.908055] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 154, in predict_and_complete\n'}
+[14.908082] (px4_msgs) StderrLine: {'line': b'    elif new_item not in column:\n'}
+[14.908108] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 28, in __eq__\n'}
+[14.908132] (px4_msgs) StderrLine: {'line': b'    def __eq__(self, other):\n'}
+[14.908157] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[14.918385] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__cpp.dir/build.make:1205: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp] Interruzione\n'}
+[14.918817] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/px4_msgs__cpp.dir/all] Interruzione\n'}
+[14.919320] (px4_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[14.919370] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe\n'}
+[14.919428] (px4_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[14.919455] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse\n'}
+[14.919513] (px4_msgs) StderrLine: {'line': b'    token.run(self, locals)\n'}
+[14.919540] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1543, in run\n'}
+[14.919678] (px4_msgs) StderrLine: {'line': b'    sequence = interpreter.evaluate(sequenceCode, locals)\n'}
+[14.919710] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2570, in evaluate\n'}
+[14.919826] (px4_msgs) StderrLine: {'line': b"    self.invoke('beforeEvaluate', \n"}
+[14.919853] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2633, in invoke\n'}
+[14.919938] (px4_msgs) StderrLine: {'line': b'    def invoke(self, _name, **keywords):\n'}
+[14.919965] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[14.927594] (px4_msgs) StderrLine: {'line': b'Exception ignored in: <function Interpreter.__del__ at 0x74974d540ee0>\n'}
+[14.927669] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[14.927697] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__\n'}
+[14.927725] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown\n'}
+[14.927769] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize\n'}
+[14.927795] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push\n'}
+[14.927821] (px4_msgs) StderrLine: {'line': b"AttributeError: '_io.TextIOWrapper' object has no attribute 'push'\n"}
+[14.933769] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make:274: rosidl_generator_c/px4_msgs/msg/action_request.h] Interruzione\n'}
+[14.934044] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/px4_msgs__rosidl_generator_c.dir/all] Interruzione\n'}
+[14.934299] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interruzione\n'}
+[14.936229] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[14.936879] (apply_link_wrench_pkg) JobSkipped: {'identifier': 'apply_link_wrench_pkg'}
+[14.936902] (dual_wrench_publisher_pkg) JobSkipped: {'identifier': 'dual_wrench_publisher_pkg'}
+[14.936914] (load_cell_publisher_pkg) JobSkipped: {'identifier': 'load_cell_publisher_pkg'}
+[14.936923] (sensor_driver_pkg) JobSkipped: {'identifier': 'sensor_driver_pkg'}
+[14.936931] (trajectory_planner) JobSkipped: {'identifier': 'trajectory_planner'}
+[14.936940] (-) EventReactorShutdown: {}

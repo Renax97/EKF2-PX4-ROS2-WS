@@ -1,0 +1,25 @@
+[0.014s] Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/end_effector_pkg -- -j20 -l20
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/force_controlled_joint_node.dir/src/force_controlled_joint_node.cpp.o[0m
+[6.834s] [100%] [32m[1mLinking CXX executable force_controlled_joint_node[0m
+[7.160s] [100%] Built target force_controlled_joint_node
+[7.175s] Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/end_effector_pkg -- -j20 -l20
+[7.177s] Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/end_effector_pkg
+[7.186s] -- Install configuration: ""
+[7.186s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/force_controlled_joint_node
+[7.188s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/force_controlled_joint_node" to ""
+[7.188s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/package_run_dependencies/end_effector_pkg
+[7.188s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/parent_prefix_path/end_effector_pkg
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.sh
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.dsv
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.sh
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.dsv
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.bash
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.sh
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.zsh
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.dsv
+[7.189s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.dsv
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/packages/end_effector_pkg
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig.cmake
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig-version.cmake
+[7.189s] -- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.xml
+[7.191s] Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/end_effector_pkg

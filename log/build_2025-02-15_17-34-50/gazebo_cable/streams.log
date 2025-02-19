@@ -1,0 +1,37 @@
+[0.008s] Invoking command in '/home/renato/ws_sensor_combined/build/gazebo_cable': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/gazebo_cable -- -j20 -l20
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target cable_vel_control_plugin[0m
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/cable_vel_control_plugin.dir/src/cable_vel_control_plugin.cpp.o[0m
+[2.124s] [100%] [32m[1mLinking CXX shared library libcable_vel_control_plugin.so[0m
+[2.299s] [100%] Built target cable_vel_control_plugin
+[2.308s] Invoked command in '/home/renato/ws_sensor_combined/build/gazebo_cable' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/gazebo_cable -- -j20 -l20
+[2.310s] Invoking command in '/home/renato/ws_sensor_combined/build/gazebo_cable': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/gazebo_cable
+[2.318s] -- Install configuration: ""
+[2.319s] -- Execute custom install script
+[2.319s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/library_path.sh
+[2.332s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/library_path.dsv
+[2.342s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/lib/gz/libcable_vel_control_plugin.so
+[2.352s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/lib/gazebo_cable/cable_controller_test_square.py
+[2.359s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/launch/cable_sim_launch.py
+[2.367s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/launch/cable_standalone.launch
+[2.377s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/urdf/cable.sdf
+[2.387s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/urdf/cable_model.urdf.xacro
+[2.395s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.xml
+[2.401s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/package_run_dependencies/gazebo_cable
+[2.412s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/parent_prefix_path/gazebo_cable
+[2.420s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/ament_prefix_path.sh
+[2.428s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/ament_prefix_path.dsv
+[2.438s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/path.sh
+[2.446s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/environment/path.dsv
+[2.453s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.bash
+[2.461s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.sh
+[2.468s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.zsh
+[2.477s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/local_setup.dsv
+[2.484s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.dsv
+[2.491s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/ament_index/resource_index/packages/gazebo_cable
+[2.500s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.508s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.513s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/ament_cmake_export_libraries-extras.cmake
+[2.520s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/gazebo_cableConfig.cmake
+[2.527s] -- Symlinking: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/cmake/gazebo_cableConfig-version.cmake
+[2.534s] -- Up-to-date symlink: /home/renato/ws_sensor_combined/install/gazebo_cable/share/gazebo_cable/package.xml
+[2.536s] Invoked command in '/home/renato/ws_sensor_combined/build/gazebo_cable' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/gazebo_cable

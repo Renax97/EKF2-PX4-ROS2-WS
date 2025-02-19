@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/renato/ws_sensor_combined/build/apply_link_wrench_pkg/apply_link_wrench" "TARGETS" "apply_link_wrench" "DESTINATION" "lib/apply_link_wrench_pkg")

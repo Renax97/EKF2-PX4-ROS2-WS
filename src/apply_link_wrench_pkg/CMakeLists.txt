@@ -9,12 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(ros_gz_interfaces REQUIRED)
+find_package(px4_msgs REQUIRED)
 
 # Define the executable
 add_executable(apply_link_wrench src/apply_link_wrench.cpp)
 
 # Link dependencies to the executable
-ament_target_dependencies(apply_link_wrench rclcpp ros_gz_interfaces)
+ament_target_dependencies(apply_link_wrench rclcpp ros_gz_interfaces px4_msgs)
 
 # Install the executable
 install(TARGETS

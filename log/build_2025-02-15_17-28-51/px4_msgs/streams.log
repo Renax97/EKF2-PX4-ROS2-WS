@@ -1,0 +1,77 @@
+[0.011s] Invoking command in '/home/renato/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/px4_msgs -- -j20 -l20
+[0.262s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.269s] [  0%] Built target ament_cmake_python_symlink_px4_msgs
+[0.278s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.487s] running egg_info
+[0.495s] writing px4_msgs.egg-info/PKG-INFO
+[0.496s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[0.496s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[0.520s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[0.520s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[0.550s] [  0%] Built target ament_cmake_python_build_px4_msgs_egg
+[14.907s] Traceback (most recent call last):
+[14.907s] Traceback (most recent call last):
+[14.907s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in <module>
+[14.907s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>
+[14.907s]     sys.exit(main())
+[14.907s]     sys.exit(main())
+[14.907s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main
+[14.907s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+[14.907s]     generate_c(args.generator_arguments_file)
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+[14.907s]     generate_cpp(args.generator_arguments_file)
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp
+[14.907s]     return generate_files(
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+[14.907s]     return generate_files(
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+[14.907s]     expand_template(
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+[14.907s]     idl_file = parse_idl_file(locator)
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+[14.907s] gmake[2]: *** Eliminazione del file «rosidl_generator_cpp/px4_msgs/msg/action_request.hpp»
+[14.907s]     interpreter.string(template_content, template_path, locals=data)
+[14.907s]   File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+[14.907s]     content = parse_idl_string(string, png_file=png_file)
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+[14.907s] gmake[2]: *** Eliminazione del file «rosidl_generator_c/px4_msgs/msg/action_request.h»
+[14.907s]     tree = get_ast_from_idl_string(idl_string)
+[14.907s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+[14.907s]     return _parser.parse(idl_string)
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+[14.908s]     return self.parser.parse(text, start=start, on_error=on_error)
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+[14.908s]     return self.parser.parse(stream, chosen_start, **kw)
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+[14.908s]     to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+[14.908s]     self.predict_and_complete(i, to_scan, columns, transitives)
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 154, in predict_and_complete
+[14.908s]     elif new_item not in column:
+[14.908s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 28, in __eq__
+[14.908s]     def __eq__(self, other):
+[14.908s] KeyboardInterrupt
+[14.918s] gmake[2]: *** [CMakeFiles/px4_msgs__cpp.dir/build.make:1205: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp] Interruzione
+[14.918s] gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/px4_msgs__cpp.dir/all] Interruzione
+[14.919s]     self.safe(scanner, True, locals)
+[14.919s]   File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+[14.919s]     self.parse(scanner, locals)
+[14.919s]   File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+[14.919s]     token.run(self, locals)
+[14.919s]   File "/usr/lib/python3/dist-packages/em.py", line 1543, in run
+[14.919s]     sequence = interpreter.evaluate(sequenceCode, locals)
+[14.919s]   File "/usr/lib/python3/dist-packages/em.py", line 2570, in evaluate
+[14.919s]     self.invoke('beforeEvaluate', 
+[14.920s]   File "/usr/lib/python3/dist-packages/em.py", line 2633, in invoke
+[14.920s]     def invoke(self, _name, **keywords):
+[14.920s] KeyboardInterrupt
+[14.927s] Exception ignored in: <function Interpreter.__del__ at 0x74974d540ee0>
+[14.927s] Traceback (most recent call last):
+[14.927s]   File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+[14.927s]   File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+[14.927s]   File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+[14.927s]   File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+[14.927s] AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+[14.933s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make:274: rosidl_generator_c/px4_msgs/msg/action_request.h] Interruzione
+[14.934s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/px4_msgs__rosidl_generator_c.dir/all] Interruzione
+[14.934s] gmake: *** [Makefile:146: all] Interruzione

@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target end_effector_pkg[0m
+[100%] Built target end_effector_pkg
+-- Install configuration: ""
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/end_effector_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/package_run_dependencies/end_effector_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/parent_prefix_path/end_effector_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.bash
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.zsh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.dsv
+-- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/packages/end_effector_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig.cmake
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig-version.cmake
+-- Up-to-date: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.xml

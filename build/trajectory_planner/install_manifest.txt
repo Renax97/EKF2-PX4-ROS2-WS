@@ -1,0 +1,3 @@
+/home/renato/ws_sensor_combined/install/trajectory_planner/lib/libframe_transforms.so
+/home/renato/ws_sensor_combined/install/trajectory_planner/share/trajectory_planner/cmake/export_frame_transformsExport.cmake
+/home/renato/ws_sensor_combined/install/trajectory_planner/share/trajectory_planner/cmake/export_frame_transformsExport-noconfig.cmake

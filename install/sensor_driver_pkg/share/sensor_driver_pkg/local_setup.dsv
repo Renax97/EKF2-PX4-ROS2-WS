@@ -1,2 +1,1 @@
-source;share/sensor_driver_pkg/environment/ament_prefix_path.sh
-source;share/sensor_driver_pkg/environment/path.sh
+/home/renato/ws_sensor_combined/build/sensor_driver_pkg/ament_cmake_environment_hooks/local_setup.dsv

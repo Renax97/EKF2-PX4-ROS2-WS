@@ -1,0 +1,16 @@
+/home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/force_controlled_joint_node
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/package_run_dependencies/end_effector_pkg
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/parent_prefix_path/end_effector_pkg
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.sh
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.dsv
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.sh
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.dsv
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.bash
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.sh
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.zsh
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.dsv
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.dsv
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/packages/end_effector_pkg
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig.cmake
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig-version.cmake
+/home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.xml
