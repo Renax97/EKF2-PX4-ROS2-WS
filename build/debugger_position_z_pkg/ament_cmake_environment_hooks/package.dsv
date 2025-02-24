@@ -1,0 +1,4 @@
+source;share/debugger_position_z_pkg/local_setup.bash
+source;share/debugger_position_z_pkg/local_setup.dsv
+source;share/debugger_position_z_pkg/local_setup.sh
+source;share/debugger_position_z_pkg/local_setup.zsh

@@ -12,7 +12,7 @@ public:
     {
         // Subscriber per leggere i dati dal sensore di forza di Gazebo
         force_sensor_subscriber_ = this->create_subscription<geometry_msgs::msg::WrenchStamped>(
-            "/world/default/model/x500_0/joint/link2_link3_joint/sensor/force_torque_sensor/forcetorque",
+            "/world/default/model/x500_vision_0/joint/link2_link3_joint/sensor/force_torque_sensor/forcetorque",
             10,
             std::bind(&ForceSensorReaderNode::forceSensorCallback, this, std::placeholders::_1));
 
@@ -130,5 +130,4 @@ int main(int argc, char *argv[])
 }
 
 */
-
 
