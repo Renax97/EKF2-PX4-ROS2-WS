@@ -1,1 +1,5 @@
-/home/renato/ws_sensor_combined/src/px4_msgs/msg/OrbTestLarge.msg
+uint64 timestamp		# time since system start (microseconds)
+
+int32 val
+
+uint8[512] junk

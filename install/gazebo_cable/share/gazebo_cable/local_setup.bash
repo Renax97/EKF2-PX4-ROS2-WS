@@ -1,1 +1,0 @@
-/home/renato/ws_sensor_combined/build/gazebo_cable/ament_cmake_environment_hooks/local_setup.bash

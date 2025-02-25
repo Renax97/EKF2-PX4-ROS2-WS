@@ -637,6 +637,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_p
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__type_support.h \
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__struct.h \
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.h \
+ /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.h \
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.h \
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h \
  /home/renato/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.h \

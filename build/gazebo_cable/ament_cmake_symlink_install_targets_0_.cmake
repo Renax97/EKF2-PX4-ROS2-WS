@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/renato/ws_sensor_combined/build/gazebo_cable/libcable_vel_control_plugin.so" "TARGETS" "cable_vel_control_plugin" "LIBRARY_DESTINATION" "lib/gz")

@@ -315,17 +315,17 @@ px4_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : px4_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_px4_msgs
+# Target rules for targets named ament_cmake_python_copy_px4_msgs
 
 # Build rule for target.
-ament_cmake_python_symlink_px4_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_px4_msgs
-.PHONY : ament_cmake_python_symlink_px4_msgs
+ament_cmake_python_copy_px4_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_px4_msgs
+.PHONY : ament_cmake_python_copy_px4_msgs
 
 # fast build rule for target.
-ament_cmake_python_symlink_px4_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_px4_msgs.dir/build.make CMakeFiles/ament_cmake_python_symlink_px4_msgs.dir/build
-.PHONY : ament_cmake_python_symlink_px4_msgs/fast
+ament_cmake_python_copy_px4_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_px4_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_px4_msgs.dir/build
+.PHONY : ament_cmake_python_copy_px4_msgs/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_px4_msgs_egg
@@ -3884,6 +3884,54 @@ rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.s: rosidl_gen
 rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.o: rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.i: rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.s: rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.o: rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.o
@@ -8421,6 +8469,54 @@ rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c.s
 
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.o: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.i: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.s: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c.s
+
 rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.o: rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.o
 
@@ -12884,6 +12980,54 @@ rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.s: rosidl_types
 rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.o: rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.i: rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.s: rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.o: rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.o
@@ -17349,6 +17493,54 @@ rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.cpp.s
 
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.s
+
 rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.o
 
@@ -21812,6 +22004,54 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.o
@@ -26277,6 +26517,54 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_statu
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.o
 
@@ -30740,6 +31028,54 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_su
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o
@@ -35205,6 +35541,54 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o
 
@@ -36203,7 +36587,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_px4_msgs_egg"
-	@echo "... ament_cmake_python_symlink_px4_msgs"
+	@echo "... ament_cmake_python_copy_px4_msgs"
 	@echo "... px4_msgs"
 	@echo "... px4_msgs__cpp"
 	@echo "... px4_msgs__py"
@@ -36655,6 +37039,12 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.s"
@@ -37222,6 +37612,12 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.s"
@@ -37780,6 +38176,12 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/telemetry_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.s"
@@ -38338,6 +38740,12 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/telemetry_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tilting_mc_desired_angles__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/tiltrotor_extra_controls__type_support.s"
@@ -38896,6 +39304,12 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.s"
@@ -39454,6 +39868,12 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tilting_mc_desired_angles__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.s"
@@ -40012,6 +40432,12 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/telemetry_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.s"
@@ -40570,6 +40996,12 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.s"

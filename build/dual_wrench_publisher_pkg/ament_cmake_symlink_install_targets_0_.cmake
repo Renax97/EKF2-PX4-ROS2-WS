@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/renato/ws_sensor_combined/build/dual_wrench_publisher_pkg/dual_wrench_publisher_node" "TARGETS" "dual_wrench_publisher_node" "DESTINATION" "lib/dual_wrench_publisher_pkg")

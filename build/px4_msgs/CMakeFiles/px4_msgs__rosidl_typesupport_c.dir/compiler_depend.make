@@ -5223,6 +5223,78 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h
 
+CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp.o: rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp \
+  /usr/include/stdc-predef.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.h \
+  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h
+
+CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp.o: rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp \
+  /usr/include/stdc-predef.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.h \
+  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h
+
 CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.cpp.o: rosidl_typesupport_c/px4_msgs/msg/tiltrotor_extra_controls__type_support.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/cstddef \
@@ -6770,6 +6842,12 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__struct.h:
 
 rosidl_typesupport_c/px4_msgs/msg/vehicle_local_position__type_support.cpp:
 
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__struct.h:
+
+rosidl_typesupport_c/px4_msgs/msg/vehicle_land_detected__type_support.cpp:
+
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__type_support.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear__struct.h:
@@ -6799,6 +6877,10 @@ rosidl_typesupport_c/px4_msgs/msg/vehicle_angular_velocity__type_support.cpp:
 rosidl_typesupport_c/px4_msgs/msg/hover_thrust_estimate__type_support.cpp:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__type_support.h:
+
+rosidl_typesupport_c/px4_msgs/msg/vehicle_imu_status__type_support.cpp:
+
+rosidl_generator_c/px4_msgs/msg/detail/home_position__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h:
 
@@ -6845,6 +6927,8 @@ rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__struct.h:
 rosidl_typesupport_c/px4_msgs/msg/gimbal_manager_information__type_support.cpp:
 
 rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__type_support.h:
 
@@ -7222,6 +7306,8 @@ rosidl_generator_c/px4_msgs/msg/detail/follow_target__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/orb_test_medium__type_support.h:
 
 /usr/include/features-time64.h:
@@ -7258,12 +7344,6 @@ rosidl_typesupport_c/px4_msgs/msg/gimbal_device_set_attitude__type_support.cpp:
 
 rosidl_typesupport_c/px4_msgs/msg/landing_gear_wheel__type_support.cpp:
 
-rosidl_typesupport_c/px4_msgs/msg/estimator_bias__type_support.cpp:
-
-rosidl_typesupport_c/px4_msgs/msg/debug_key_value__type_support.cpp:
-
-rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__type_support.h:
-
 rosidl_typesupport_c/px4_msgs/msg/sensor_gyro_fft__type_support.cpp:
 
 rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__type_support.h:
@@ -7277,8 +7357,6 @@ rosidl_typesupport_c/px4_msgs/msg/airspeed_wind__type_support.cpp:
 rosidl_generator_c/px4_msgs/msg/detail/geofence_result__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.h:
-
-rosidl_typesupport_c/px4_msgs/msg/orbit_status__type_support.cpp:
 
 rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__type_support.h:
 
@@ -7418,8 +7496,6 @@ rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__type_support.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/launch_detection_status__struct.h:
 
 rosidl_typesupport_c/px4_msgs/msg/led_control__type_support.cpp:
@@ -7468,8 +7544,6 @@ rosidl_typesupport_c/px4_msgs/msg/magnetometer_bias_estimate__type_support.cpp:
 
 rosidl_typesupport_c/px4_msgs/msg/vehicle_attitude__type_support.cpp:
 
-rosidl_typesupport_c/px4_msgs/msg/vehicle_land_detected__type_support.cpp:
-
 rosidl_generator_c/px4_msgs/msg/detail/rc_channels__type_support.h:
 
 rosidl_typesupport_c/px4_msgs/msg/manual_control_setpoint__type_support.cpp:
@@ -7517,6 +7591,10 @@ rosidl_typesupport_c/px4_msgs/msg/mission__type_support.cpp:
 rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/mission__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__type_support.h:
 
@@ -7752,6 +7830,8 @@ rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__type_support.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.h:
+
 rosidl_typesupport_c/px4_msgs/msg/sensor_gyro_fifo__type_support.cpp:
 
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h:
@@ -7801,6 +7881,20 @@ rosidl_generator_c/px4_msgs/msg/detail/tune_control__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__struct.h:
+
+rosidl_typesupport_c/px4_msgs/msg/orbit_status__type_support.cpp:
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_attitude_setpoint__type_support.cpp:
+
+rosidl_typesupport_c/px4_msgs/msg/estimator_bias__type_support.cpp:
+
+rosidl_typesupport_c/px4_msgs/msg/debug_key_value__type_support.cpp:
+
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__type_support.h:
+
+rosidl_typesupport_c/px4_msgs/msg/tilting_mc_desired_angles__type_support.cpp:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h:
 
@@ -7871,13 +7965,3 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/home_position__type_support.h:
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_imu_status__type_support.cpp:
-
-rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__type_support.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__type_support.h:

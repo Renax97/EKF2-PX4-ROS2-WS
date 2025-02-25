@@ -288,6 +288,10 @@ msg/TecsStatus.idl
 msg/TecsStatus.msg
 msg/TelemetryStatus.idl
 msg/TelemetryStatus.msg
+msg/TiltingAttitudeSetpoint.idl
+msg/TiltingAttitudeSetpoint.msg
+msg/TiltingMcDesiredAngles.idl
+msg/TiltingMcDesiredAngles.msg
 msg/TiltrotorExtraControls.idl
 msg/TiltrotorExtraControls.msg
 msg/TimesyncStatus.idl

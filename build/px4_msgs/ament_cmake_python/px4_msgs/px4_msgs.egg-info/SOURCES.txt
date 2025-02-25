@@ -150,6 +150,8 @@ px4_msgs/msg/_takeoff_status.py
 px4_msgs/msg/_task_stack_info.py
 px4_msgs/msg/_tecs_status.py
 px4_msgs/msg/_telemetry_status.py
+px4_msgs/msg/_tilting_attitude_setpoint.py
+px4_msgs/msg/_tilting_mc_desired_angles.py
 px4_msgs/msg/_tiltrotor_extra_controls.py
 px4_msgs/msg/_timesync_status.py
 px4_msgs/msg/_trajectory_bezier.py

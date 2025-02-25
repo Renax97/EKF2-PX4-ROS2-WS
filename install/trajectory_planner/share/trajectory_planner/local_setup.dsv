@@ -1,1 +1,3 @@
-/home/renato/ws_sensor_combined/build/trajectory_planner/ament_cmake_environment_hooks/local_setup.dsv
+source;share/trajectory_planner/environment/ament_prefix_path.sh
+source;share/trajectory_planner/environment/library_path.sh
+source;share/trajectory_planner/environment/path.sh

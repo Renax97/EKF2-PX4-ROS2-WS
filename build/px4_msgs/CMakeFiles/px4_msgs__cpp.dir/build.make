@@ -791,6 +791,16 @@ CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_sta
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__struct.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__traits.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__type_support.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tilting_attitude_setpoint.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__builder.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__traits.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tilting_mc_desired_angles.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__builder.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__traits.hpp
+CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tiltrotor_extra_controls.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__builder.hpp
 CMakeFiles/px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.hpp
@@ -1158,6 +1168,8 @@ rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/ms
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TaskStackInfo.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TecsStatus.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TelemetryStatus.idl
+rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TiltingAttitudeSetpoint.idl
+rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TiltingMcDesiredAngles.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TiltrotorExtraControls.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TimesyncStatus.idl
 rosidl_generator_cpp/px4_msgs/msg/action_request.hpp: rosidl_adapter/px4_msgs/msg/TrajectoryBezier.idl
@@ -3376,6 +3388,36 @@ rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__traits.hpp: rosidl_ge
 rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__type_support.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__type_support.hpp
 
+rosidl_generator_cpp/px4_msgs/msg/tilting_attitude_setpoint.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/tilting_attitude_setpoint.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__builder.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__builder.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__traits.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__traits.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/tilting_mc_desired_angles.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/tilting_mc_desired_angles.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__builder.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__builder.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__traits.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__traits.hpp
+
+rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.hpp
+
 rosidl_generator_cpp/px4_msgs/msg/tiltrotor_extra_controls.hpp: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/px4_msgs/msg/tiltrotor_extra_controls.hpp
 
@@ -4599,6 +4641,14 @@ px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__builde
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__struct.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__traits.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/telemetry_status__type_support.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__builder.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__traits.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__builder.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__traits.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__builder.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__traits.hpp
@@ -4881,6 +4931,8 @@ px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/takeoff_status.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/task_stack_info.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tecs_status.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/telemetry_status.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tilting_attitude_setpoint.hpp
+px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tilting_mc_desired_angles.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/tiltrotor_extra_controls.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/timesync_status.hpp
 px4_msgs__cpp: rosidl_generator_cpp/px4_msgs/msg/trajectory_bezier.hpp

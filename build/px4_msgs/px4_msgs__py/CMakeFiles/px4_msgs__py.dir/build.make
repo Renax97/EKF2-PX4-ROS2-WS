@@ -214,6 +214,8 @@ px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_takeoff_
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_task_stack_info.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tecs_status.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_telemetry_status.py
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint.py
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_timesync_status.py
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier.py
@@ -401,6 +403,8 @@ px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_takeoff_
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_task_stack_info_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c
+px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c
 px4_msgs__py/CMakeFiles/px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c
@@ -601,6 +605,8 @@ rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: ros
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TaskStackInfo.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TecsStatus.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TelemetryStatus.idl
+rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TiltingAttitudeSetpoint.idl
+rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TiltingMcDesiredAngles.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TiltrotorExtraControls.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TimesyncStatus.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/msg/TrajectoryBezier.idl
@@ -1087,6 +1093,12 @@ rosidl_generator_py/px4_msgs/msg/_tecs_status.py: rosidl_generator_py/px4_msgs/_
 
 rosidl_generator_py/px4_msgs/msg/_telemetry_status.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_telemetry_status.py
+
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint.py
+
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles.py
 
 rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls.py: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls.py
@@ -1649,6 +1661,12 @@ rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c: rosidl_generator_py/px4_msgs/
 rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c
 
+rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c
+
+rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c
+
 rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c
 
@@ -2067,6 +2085,10 @@ px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tecs_status.py
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_telemetry_status.py
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint.py
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_attitude_setpoint_s.c
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles.py
+px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tilting_mc_desired_angles_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls.py
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c
 px4_msgs__py: rosidl_generator_py/px4_msgs/msg/_timesync_status.py

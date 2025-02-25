@@ -211,6 +211,8 @@ CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TakeoffSta
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TaskStackInfo.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TecsStatus.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TelemetryStatus.msg
+CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TiltingAttitudeSetpoint.msg
+CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TiltingMcDesiredAngles.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TiltrotorExtraControls.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TimesyncStatus.msg
 CMakeFiles/px4_msgs: /home/renato/ws_sensor_combined/src/px4_msgs/msg/TrajectoryBezier.msg

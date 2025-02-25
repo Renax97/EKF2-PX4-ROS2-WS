@@ -678,6 +678,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__type_support.h \
   rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__struct.h \
   rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.h \
   rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.h \
   rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h \
   rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.h \
@@ -940,6 +946,14 @@ rosidl_generator_c/px4_msgs/msg/detail/timesync_status__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.h:
 
@@ -1620,6 +1634,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/cpuload__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_mc_desired_angles__functions.h:
 
 /usr/include/python3.10/weakrefobject.h:
 
@@ -2396,6 +2412,8 @@ rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/tilting_attitude_setpoint__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__struct.h:
 
