@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target csv_maker_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/csv_maker_node.dir/src/csv_maker_node.cpp.o[0m
+[01m[K/home/renato/ws_sensor_combined/src/csv_maker_pkg/src/csv_maker_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: File o directory non esistente
+    3 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/csv_maker_node.dir/build.make:76: CMakeFiles/csv_maker_node.dir/src/csv_maker_node.cpp.o] Errore 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/csv_maker_node.dir/all] Errore 2
+gmake: *** [Makefile:146: all] Errore 2

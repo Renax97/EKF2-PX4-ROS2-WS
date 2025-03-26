@@ -6,12 +6,12 @@ public:
     OdometryConverter() : Node("odometry_converter") {
         // Sottoscrizione al topic di odometria
         odometry_subscriber_ = this->create_subscription<nav_msgs::msg::Odometry>(
-            "/model/x500_vision_0/odometry", 10,
+            "/model/x500_0/odometry", 1,
             std::bind(&OdometryConverter::odometry_callback, this, std::placeholders::_1));
 
         // Publisher per il topic convertito
         ground_truth_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>(
-            "/model/x500_vision_0/ground_truth", 10);
+            "/model/x500_vision_0/ground_truth", 1);
     }
 
 private:

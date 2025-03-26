@@ -1,0 +1,22 @@
+[0.048s] Invoking command in '/home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg -- -j20 -l20
+[0.200s] [100%] Built target ground_truth_publisher_node
+[0.231s] Invoked command in '/home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg -- -j20 -l20
+[0.260s] Invoking command in '/home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg
+[0.284s] -- Install configuration: ""
+[0.285s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/lib/ground_truth_publisher_pkg/ground_truth_publisher_node
+[0.285s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/ground_truth_publisher_pkg
+[0.286s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/ground_truth_publisher_pkg
+[0.286s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/environment/ament_prefix_path.sh
+[0.286s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/environment/ament_prefix_path.dsv
+[0.286s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/environment/path.sh
+[0.287s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/environment/path.dsv
+[0.287s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/local_setup.bash
+[0.287s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/local_setup.sh
+[0.287s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/local_setup.zsh
+[0.288s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/local_setup.dsv
+[0.288s] -- Installing: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/package.dsv
+[0.288s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ament_index/resource_index/packages/ground_truth_publisher_pkg
+[0.288s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/cmake/ground_truth_publisher_pkgConfig.cmake
+[0.288s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/cmake/ground_truth_publisher_pkgConfig-version.cmake
+[0.289s] -- Up-to-date: /home/renato/ws_sensor_combined/install/ground_truth_publisher_pkg/share/ground_truth_publisher_pkg/package.xml
+[0.291s] Invoked command in '/home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/ground_truth_publisher_pkg

@@ -1,0 +1,69 @@
+[0.019s] Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/renato/ws_sensor_combined/src/end_effector_pkg -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/end_effector_pkg
+[0.107s] -- The C compiler identification is GNU 11.4.0
+[0.192s] -- The CXX compiler identification is GNU 11.4.0
+[0.203s] -- Detecting C compiler ABI info
+[0.308s] -- Detecting C compiler ABI info - done
+[0.321s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.322s] -- Detecting C compile features
+[0.323s] -- Detecting C compile features - done
+[0.328s] -- Detecting CXX compiler ABI info
+[0.448s] -- Detecting CXX compiler ABI info - done
+[0.459s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.460s] -- Detecting CXX compile features
+[0.460s] -- Detecting CXX compile features - done
+[0.464s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.482s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.626s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.694s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.702s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.715s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.734s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.759s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.827s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.832s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.975s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.020s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.088s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.103s] -- Looking for pthread.h
+[2.208s] -- Looking for pthread.h - found
+[2.209s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.317s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.319s] -- Found Threads: TRUE  
+[2.395s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.419s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.550s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.550s] -- Configured cppcheck include dirs: 
+[2.550s] -- Configured cppcheck exclude dirs and/or files: 
+[2.551s] -- Added test 'lint_cmake' to check CMake code style
+[2.552s] -- Added test 'uncrustify' to check C / C++ code style
+[2.553s] -- Configured uncrustify additional arguments: 
+[2.553s] -- Added test 'xmllint' to check XML markup files
+[2.556s] -- Configuring done
+[2.569s] -- Generating done
+[2.570s] -- Build files have been written to: /home/renato/ws_sensor_combined/build/end_effector_pkg
+[2.583s] Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/renato/ws_sensor_combined/src/end_effector_pkg -DCMAKE_INSTALL_PREFIX=/home/renato/ws_sensor_combined/install/end_effector_pkg
+[2.585s] Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/end_effector_pkg -- -j20 -l20
+[2.665s] [ 50%] [32mBuilding CXX object CMakeFiles/force_controlled_joint_node.dir/src/force_controlled_joint_node.cpp.o[0m
+[14.624s] [100%] [32m[1mLinking CXX executable force_controlled_joint_node[0m
+[15.203s] [100%] Built target force_controlled_joint_node
+[15.218s] Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/renato/ws_sensor_combined/build/end_effector_pkg -- -j20 -l20
+[15.221s] Invoking command in '/home/renato/ws_sensor_combined/build/end_effector_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/end_effector_pkg
+[15.230s] -- Install configuration: ""
+[15.230s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/force_controlled_joint_node
+[15.234s] -- Set runtime path of "/home/renato/ws_sensor_combined/install/end_effector_pkg/lib/end_effector_pkg/force_controlled_joint_node" to ""
+[15.234s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/package_run_dependencies/end_effector_pkg
+[15.234s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/parent_prefix_path/end_effector_pkg
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.sh
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/ament_prefix_path.dsv
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.sh
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/environment/path.dsv
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.bash
+[15.235s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.sh
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.zsh
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/local_setup.dsv
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.dsv
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/ament_index/resource_index/packages/end_effector_pkg
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig.cmake
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/cmake/end_effector_pkgConfig-version.cmake
+[15.236s] -- Installing: /home/renato/ws_sensor_combined/install/end_effector_pkg/share/end_effector_pkg/package.xml
+[15.239s] Invoked command in '/home/renato/ws_sensor_combined/build/end_effector_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/renato/ws_sensor_combined/build/end_effector_pkg

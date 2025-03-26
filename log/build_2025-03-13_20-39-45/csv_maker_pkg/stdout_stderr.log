@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/csv_maker_node.dir/src/csv_maker_node.cpp.o[0m
+[32m[1mLinking CXX executable csv_maker_node[0m
+Built target csv_maker_node
+-- Install configuration: ""
+-- Installing: /home/renato/ws_sensor_combined/install/csv_maker_pkg/lib/csv_maker_pkg/csv_maker_node
+-- Set runtime path of "/home/renato/ws_sensor_combined/install/csv_maker_pkg/lib/csv_maker_pkg/csv_maker_node" to ""
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/ament_index/resource_index/package_run_dependencies/csv_maker_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/ament_index/resource_index/parent_prefix_path/csv_maker_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/environment/path.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/environment/path.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/local_setup.bash
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/local_setup.sh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/local_setup.zsh
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/local_setup.dsv
+-- Installing: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/package.dsv
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/ament_index/resource_index/packages/csv_maker_pkg
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/cmake/csv_maker_pkgConfig.cmake
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/cmake/csv_maker_pkgConfig-version.cmake
+-- Up-to-date: /home/renato/ws_sensor_combined/install/csv_maker_pkg/share/csv_maker_pkg/package.xml

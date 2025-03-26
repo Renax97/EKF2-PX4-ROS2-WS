@@ -1,0 +1,26 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/renato/ws_sensor_combined/src/sensor_driver_pkg/src/sensor_driver_gz_node.cpp:3[m[K:
+[01m[K/home/renato/ws_sensor_combined/src/sensor_driver_pkg/src/sensor_driver_gz_node.cpp:[m[K In member function ‘[01m[Kvoid ForceSensorReaderNode::forceSensorCallback(geometry_msgs::msg::WrenchStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/renato/ws_sensor_combined/src/sensor_driver_pkg/src/sensor_driver_gz_node.cpp:47:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lld[m[K’ expects argument of type ‘[01m[Klong long int[m[K’, but argument 5 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   47 |                     [01;35m[K"Publishing LoadCellData: Time diff (µs): %lld, Fx=%.2f, Fy=%.2f, Fz=%.2f"[m[K,
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   48 |                     [32m[Kthis->now().nanoseconds() / 1000 - load_cell_msg.timestamp[m[K,
+      |                     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                      [32m[K|[m[K
+      |                                                      [32m[Klong unsigned int[m[K
+[01m[K/home/renato/ws_sensor_combined/src/sensor_driver_pkg/src/sensor_driver_gz_node.cpp:47:66:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   47 |                     "Publishing LoadCellData: Time diff (µs): [01;36m[K%lld[m[K, Fx=%.2f, Fy=%.2f, Fz=%.2f",
+      |                                                               [01;36m[K~~~^[m[K
+      |                                                                  [01;36m[K|[m[K
+      |                                                                  [01;36m[Klong long int[m[K
+      |                                                               [32m[K%ld[m[K
